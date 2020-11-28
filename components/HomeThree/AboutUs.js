@@ -3,56 +3,42 @@ import Link from 'next/link';
 import ModalVideo from 'react-modal-video';
 
 const AboutUs = () => {
-    // Popup Video
-	const [isOpen, setIsOpen] = React.useState(true);
-    const openModal = () => {
-        setIsOpen(!isOpen);
-    }
-    return (
-        <div className="about-area about-area-three ptb-100">
-			<div className="container">
-				<div className="row align-items-center">
-					<div className="col-lg-6 col-md-6">
-						<div className="about-content">
-							<span>About Us</span>
-							<h2>Insurance Always Ready to Protect your Life & Business</h2>
+  return (
+    <div className='about-area about-area-three ptb-100'>
+      <div className='container'>
+        <div className='row align-items-center'>
+          <div className='col-lg-6 col-md-6'>
+            <div className='about-content'>
+              <span>About Us</span>
+              <h2>BPOS Global About us Heading</h2>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis</p>	
+              <p>
+                In today’s economy success can only be derived from a well-planned, well executed and agile
+                infrastructure. People and Process are the foundation of any organization and will determine the level
+                of success achieved and sustained.
+              </p>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus aliqua suspendris.</p>
-                            
-                            <Link href="/about">
-                                <a className="default-btn">Know Details</a>
-                            </Link>
+              <p>
+                In an era where rapid delivery of high quality, cost efficient business results are continuously
+                required; BPOS is your solution. We are committed to understanding and strengthening your company's
+                assets in order to drive a highly profitable and exciting future for all.
+              </p>
 
-                            <Link href="#play-video">
-                                <a
-                                    onClick={e => {e.preventDefault(); openModal()}}
-                                    className="default-btn active popup-youtube"
-                                > 
-                                    Video Play
-                                </a>
-                            </Link>
-						</div>
-					</div>
+              <Link href='/about'>
+                <a className='default-btn'>Know Details</a>
+              </Link>
+            </div>
+          </div>
 
-					<div className="col-lg-6 col-md-6">
-						<div className="about-img-3">
-							<img src="/images/about-img-5.jpg" alt="Image" />
-						</div>
-					</div>
-				</div>
-			</div>
-
-            {/* If you want to change the video need to update videoID */}
-            <ModalVideo 
-                channel='youtube' 
-                isOpen={!isOpen} 
-                videoId='bk7McNUjWgw' 
-                onClose={() => setIsOpen(!isOpen)} 
-            />
-		</div>
-    )
-}
+          <div className='col-lg-6 col-md-6'>
+            <div className='about-img-3'>
+              <img src='/images/about-img-5.jpg' alt='Image' />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default AboutUs;

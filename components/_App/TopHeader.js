@@ -7,7 +7,7 @@ const TopHeader = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-4 col-sm-6">
                         <div className="header-content-left">
-                            <p>Welcome To flexa Insurance!</p>
+                            <p>Welcome to BPOS Global</p>
                         </div>
                     </div>
 
@@ -23,7 +23,7 @@ const TopHeader = () => {
                             <li>
                                 <a href="mailto:hello@flexa.com">
                                     <i className="bx bx-envelope"></i>
-                                    Email: hello@flexa.com
+                                    Email: contact@bposllc.com
                                 </a>
                             </li>
                         </ul>

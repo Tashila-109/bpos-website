@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarTwo from '../components/_App/Navbar';
+import NavbarTwo from '../components/_App/NavbarTwo';
 import PageBanner from '../components/Common/PageBanner';
 import ContactForm from '../components/Contact/ContactForm';
 import Map from '../components/Contact/Map';

@@ -72,209 +72,17 @@ const Navbar = () => {
                     <li className='nav-item'>
                       <Link href='/about' activeClassName='active'>
                         <a onClick={toggleNavbar} className='nav-link'>
-                          About
+                          About Us
                         </a>
                       </Link>
                     </li>
 
                     <li className='nav-item'>
-                      <Link href='#'>
-                        <a onClick={e => e.preventDefault()} className='nav-link'>
-                          Pages <i className='bx bx-chevron-down'></i>
+                      <Link href='/services' activeClassName='active'>
+                        <a onClick={toggleNavbar} className='nav-link'>
+                          Products & Services
                         </a>
                       </Link>
-
-                      <ul className='dropdown-menu'>
-                        <li className='nav-item'>
-                          <Link href='/team' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Team
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/pricing' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Pricing
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/testimonials' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Testimonials
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='#'>
-                            <a onClick={e => e.preventDefault()} className='nav-link'>
-                              User <i className='bx bx-chevron-down'></i>
-                            </a>
-                          </Link>
-
-                          <ul className='dropdown-menu'>
-                            <li className='nav-item'>
-                              <Link href='/sign-up' activeClassName='active'>
-                                <a onClick={toggleNavbar} className='nav-link'>
-                                  Sign Up
-                                </a>
-                              </Link>
-                            </li>
-
-                            <li className='nav-item'>
-                              <Link href='/sign-in' activeClassName='active'>
-                                <a onClick={toggleNavbar} className='nav-link'>
-                                  Sign In
-                                </a>
-                              </Link>
-                            </li>
-
-                            <li className='nav-item'>
-                              <Link href='/recover-password' activeClassName='active'>
-                                <a onClick={toggleNavbar} className='nav-link'>
-                                  Recover Password
-                                </a>
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/faq' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              FAQ
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/coming-soon' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Coming Soon
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/terms-conditions' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Terms & Conditions
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/privacy-policy' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Privacy Policy
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/404' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              404 Error Page
-                            </a>
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li className='nav-item'>
-                      <Link href='#'>
-                        <a onClick={e => e.preventDefault()} className='nav-link'>
-                          Insurance <i className='bx bx-chevron-down'></i>
-                        </a>
-                      </Link>
-
-                      <ul className='dropdown-menu'>
-                        <li className='nav-item'>
-                          <Link href='/travel-insurance' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Travel Insurance
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/business-insurance' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Business Insurance
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/health-insurance' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Health Insurance
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/car-insurance' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Car Insurance
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/insurance-details' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Insurance Details
-                            </a>
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li className='nav-item'>
-                      <Link href='#' activeClassName='active'>
-                        <a onClick={e => e.preventDefault()} className='nav-link'>
-                          Portfolio <i className='bx bx-chevron-down'></i>
-                        </a>
-                      </Link>
-
-                      <ul className='dropdown-menu'>
-                        <li className='nav-item'>
-                          <Link href='/portfolio-columns-two' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Portfolio Columns Two
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/portfolio-columns-three' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Portfolio Columns Three
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/portfolio-columns-four' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Portfolio Columns Four
-                            </a>
-                          </Link>
-                        </li>
-
-                        <li className='nav-item'>
-                          <Link href='/portfolio-details' activeClassName='active'>
-                            <a onClick={toggleNavbar} className='nav-link'>
-                              Portfolio Details
-                            </a>
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
 
                     <li className='nav-item'>
@@ -335,7 +143,7 @@ const Navbar = () => {
                 <h2 className='modal-title'>
                   <Link href='/'>
                     <a>
-                      <img src='/images/logo2.png' alt='Logo' />
+                      <img src='/images/logo.png' alt='Logo' className='navbar-logo' />
                     </a>
                   </Link>
                 </h2>
@@ -375,7 +183,7 @@ const Navbar = () => {
                     <li>
                       <i className='bx bx-envelope'></i>
                       Email
-                      <a href='mailto:hello@flexa.com'>hello@flexa.com</a>
+                      <a href='mailto:hello@flexa.com'>hello@bposllc.com</a>
                     </li>
                     <li>
                       <i className='bx bxs-phone-call'></i>

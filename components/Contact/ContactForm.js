@@ -73,8 +73,8 @@ const ContactForm = () => {
 									<i className="flaticon-email"></i>
 									Email Us:
 									<a href="mailto:hello@flexa.com">
-										hello@flexa.com <br />
-										info@flexa.com
+										hello@bposllc.com <br />
+										info@bposllc.com
 									</a>
 								</li>
 							</ul>

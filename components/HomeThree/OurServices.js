@@ -24,7 +24,7 @@ const OurServices = () => {
                 dolore
               </p>
 
-              <Link href='/insurance-details'>
+              <Link href='/services/it-services'>
                 <a>
                   <i className='flaticon-right'></i>
                 </a>

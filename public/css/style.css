@@ -1405,6 +1405,10 @@ Our Vision Area Style
   position: relative;
 }
 
+.our-vision-area .vision-content {
+  min-height: 435px;
+}
+
 .our-vision-area .vision-content span {
   font-size: 14px;
   font-weight: 700;
@@ -1448,6 +1452,10 @@ Our Vision Area Style
   position: absolute;
   left: 0;
   top: 3px;
+}
+
+.our-vision-secondary {
+  background-color: #f9fbfe;
 }
 
 /*
@@ -1705,6 +1713,10 @@ Achievement Area Style
 
 .achievement-area .achievement-content .default-btn {
   margin-top: 25px;
+}
+
+.achievement-area .asset-content {
+  margin-right: 20px;
 }
 
 .achievement-area .video-img {
@@ -3666,8 +3678,8 @@ Service Details Area Style
 }
 
 .service-details-wrap .car-service-list-wrap {
-  margin-top: 20px;
-  margin-bottom: 35px;
+  margin-top: 40px;
+  margin-bottom: 55px;
 }
 
 .service-details-wrap .car-service-list-wrap .car-service-list ul {

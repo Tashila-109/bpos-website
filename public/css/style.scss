@@ -1268,6 +1268,7 @@ Our Vision Area Style
 .our-vision-area {
   position: relative;
   .vision-content {
+		min-height: 435px;
     span {
       font-size: 14px;
       font-weight: 700;
@@ -1309,6 +1310,9 @@ Our Vision Area Style
       }
     }
   }
+}
+.our-vision-secondary {
+	background-color: #f9fbfe;
 }
 
 /*
@@ -1538,7 +1542,10 @@ Achievement Area Style
     .default-btn {
       margin-top: 25px;
     }
-  }
+	}
+	.asset-content {
+		margin-right: 20px;
+	}
   .video-img {
     position: relative;
     z-index: 1;
@@ -3294,8 +3301,8 @@ Service Details Area Style
     }
   }
   .car-service-list-wrap {
-    margin-top: 20px;
-    margin-bottom: 35px;
+    margin-top: 40px;
+    margin-bottom: 55px;
     .car-service-list {
       ul {
         margin: 0;

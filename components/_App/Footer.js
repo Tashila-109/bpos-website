@@ -91,8 +91,13 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='#'>
-                      <a>Services</a>
+                    <Link href='/services'>
+                      <a>Products & Services</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/contact'>
+                      <a>Contact Us</a>
                     </Link>
                   </li>
                 </ul>

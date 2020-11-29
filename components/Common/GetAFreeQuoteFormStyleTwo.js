@@ -78,10 +78,19 @@ export default class GetAFreeQuoteFormStyleTwo extends Component {
                           <input type='text' className='form-control' id='Number' placeholder='Your Number' />
                         </div>
 
-                        <div className='form-group'></div>
+                        <div className='form-group'>
+                          <textarea
+                            name='message'
+                            className='form-control'
+                            cols='30'
+                            rows='6'
+                            required
+                            placeholder='Write your message...'
+                          />
+                        </div>
 
                         <button type='submit' className='default-btn'>
-                          Start Saving Today
+                          Send Message
                         </button>
                       </div>
                     </div>

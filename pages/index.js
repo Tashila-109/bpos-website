@@ -29,7 +29,6 @@ const Index = () => {
       <div className='pb-100'>
         <OffersArea />
       </div>
-      <BlogPost />
       <Footer />
     </React.Fragment>
   );

@@ -263,6 +263,12 @@ Read More Area Style*/
   max-height: 50px;
 }
 
+// Footer logo
+.footer-logo {
+	min-height: 80px;
+	max-height: 80px;
+}
+
 /*===== DEFAULT STYLE END ======*/
 
 /*====================================================
@@ -1868,7 +1874,7 @@ Blog Area Style
 Footer Top Area Style
 ======================================================*/
 .footer-top-area {
-  background-image: url(/images/footer-bg.png);
+  background-image: url(/images/footer-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2785,7 +2791,7 @@ Page Title Area Style
   position: relative;
   overflow: hidden;
   z-index: 1;
-  padding-top: 240px;
+  padding-top: 220px;
   padding-bottom: 150px;
   text-align: center;
   background-color: #31306b;
@@ -4669,6 +4675,7 @@ Team Area Style
   margin-bottom: 30px;
   position: relative;
   .image {
+		min-height: 282px;
     position: relative;
     .social {
       list-style-type: none;

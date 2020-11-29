@@ -257,6 +257,12 @@ Read More Area Style*/
   }
 }
 
+// Navbar Logo
+.navbar-logo {
+  min-height: 50px;
+  max-height: 50px;
+}
+
 /*===== DEFAULT STYLE END ======*/
 
 /*====================================================
@@ -2358,8 +2364,10 @@ Testimonial Wrap Two Style
     position: relative;
     text-align: left;
     padding: 30px;
-    padding-left: 160px;
+    padding-left: 230px;
     margin: 0;
+    min-height: 275px;
+    max-height: 275px;
     img {
       position: unset;
       border-radius: 4px;
@@ -2370,6 +2378,10 @@ Testimonial Wrap Two Style
       top: 30px;
       left: 30px;
       text-align: center;
+      img {
+        width: 170px;
+        min-height: 170px;
+      }
       h3 {
         margin-top: 45px;
         margin-bottom: 0;

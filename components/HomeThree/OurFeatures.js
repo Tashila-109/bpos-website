@@ -9,8 +9,8 @@ const OurFeatures = () => {
           <span>Our Values</span>
           <h2>Some Values heading here</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+            Committed to achieve excellence by providing unparalleled solutions and value creation to our clients and
+            partners.
           </p>
         </div>
 
@@ -20,8 +20,8 @@ const OurFeatures = () => {
               <span className='flaticon-kindness'></span>
               <h3>Our Mission</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
+                Committed to achieve excellence by providing unparalleled solutions and value creation to our clients
+                and partners.
               </p>
 
               <Link href='/about'>
@@ -37,8 +37,8 @@ const OurFeatures = () => {
               <span className='flaticon-target'></span>
               <h3>Our Vision</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
+                "To be the partner of choice of our clients engaging the most talented people, producing the best in
+                class solutions and delivering powerful business results on behalf of our stakeholders"
               </p>
 
               <Link href='/insurance-details'>
@@ -54,8 +54,8 @@ const OurFeatures = () => {
               <span className='flaticon-experience'></span>
               <h3>Core Values</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
+                Excellence is not an act but a habit for us. We always use time tested proven methods to deliver
+                services doing our best to exceed the client’s expectations.
               </p>
 
               <Link href='/insurance-details'>

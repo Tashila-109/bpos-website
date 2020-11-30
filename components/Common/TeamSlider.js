@@ -79,8 +79,8 @@ const TeamSlider = () => {
               </div>
 
               <div className='content'>
-                <h3>Denial Vetori</h3>
-                <span>Team Lead</span>
+                <h3>Dr Amer Al Rawas</h3>
+                <span>CEO Tasneea Oil & Gas Technology Group</span>
               </div>
             </div>
 
@@ -113,8 +113,8 @@ const TeamSlider = () => {
               </div>
 
               <div className='content'>
-                <h3>David Jon Korola</h3>
-                <span>Marketer</span>
+                <h3>Anselm Perera</h3>
+                <span>Director/ Chief Executive Officer</span>
               </div>
             </div>
 
@@ -147,8 +147,8 @@ const TeamSlider = () => {
               </div>
 
               <div className='content'>
-                <h3>Merris Polar</h3>
-                <span>CEO</span>
+                <h3>Frances Perera</h3>
+                <span>Director</span>
               </div>
             </div>
 

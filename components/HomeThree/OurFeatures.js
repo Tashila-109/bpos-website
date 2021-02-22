@@ -7,11 +7,8 @@ const OurFeatures = () => {
       <div className='container'>
         <div className='section-title'>
           <span>Our Values</span>
-          <h2>Some Values heading here</h2>
-          <p>
-            Committed to achieve excellence by providing unparalleled solutions and value creation to our clients and
-            partners.
-          </p>
+          <h2>Our Core Values</h2>
+          <p>Committed to achieve excellence by providing unparalleled solutions and value creation to our clients and partners.</p>
         </div>
 
         <div className='row'>
@@ -20,8 +17,9 @@ const OurFeatures = () => {
               <span className='flaticon-kindness'></span>
               <h3>Our Mission</h3>
               <p>
-                Committed to achieve excellence by providing unparalleled solutions and value creation to our clients
-                and partners.
+                Be committed to achieve excellence by providing unparalleled solutions and value creation to our clients and partners.
+                <br />
+                Develop our People to be the best in what we do.
               </p>
 
               <Link href='/about'>
@@ -37,8 +35,8 @@ const OurFeatures = () => {
               <span className='flaticon-target'></span>
               <h3>Our Vision</h3>
               <p>
-                "To be the partner of choice of our clients engaging the most talented people, producing the best in
-                class solutions and delivering powerful business results on behalf of our stakeholders"
+                "To be the partner of choice of our clients, Engaging the most talented people, Producing the best in class solutions, and
+                delivering powerful business results on behalf of our stakeholders"
               </p>
 
               <Link href='/insurance-details'>
@@ -54,8 +52,8 @@ const OurFeatures = () => {
               <span className='flaticon-experience'></span>
               <h3>Core Values</h3>
               <p>
-                Excellence is not an act but a habit for us. We always use time tested proven methods to deliver
-                services doing our best to exceed the client’s expectations.
+                We pride ourselves on the fact that our success can only be derived from a well planned, well executed and agile
+                infrastructure. We stand with and by our team and will honour every commitment we make.
               </p>
 
               <Link href='/insurance-details'>

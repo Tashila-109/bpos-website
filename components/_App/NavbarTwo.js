@@ -108,8 +108,8 @@ const NavbarTwo = () => {
 
                   <div className='others-option'>
                     <div className='subscribe'>
-                      <Link href='#'>
-                        <a className='default-btn'>Get A Quote</a>
+                      <Link href='/contact'>
+                        <a className='default-btn'>Get In Touch</a>
                       </Link>
                     </div>
 

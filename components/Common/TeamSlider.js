@@ -41,11 +41,7 @@ const TeamSlider = () => {
       <div className='container'>
         <div className='section-title'>
           <span>Team</span>
-          <h2>Our Expert Team</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt labore et dolore
-            magna aliqua. Quis ipsum suspendisse ultrices gravida.
-          </p>
+          <h2>Meet Our Expert Team</h2>
         </div>
 
         {display ? (

@@ -9,49 +9,20 @@ const AboutUsContent = () => {
           <div className='col-lg-6'>
             <div className='about-content'>
               <span>About Us</span>
-              <h2>We have been Thriving in 37 Years The Area</h2>
+              <h2>Welcome to BPOS Global</h2>
 
               <p>
-                Business Process Outsourcing Services LLC (BPOS) is a company set up with the objective of providing
-                services and solutions to Banks as well as Government and Commercial Establishments in the Sultanate of
-                Oman. BPOS brings together competent people from diverse backgrounds possessing strategic, operational,
-                IT and Financial expertise in their fields.
+                <b>Business Process Outsourcing Services LLC (BPOS Global) </b> is a company set up in Oman and Sri Lanka with the objective
+                of providing services and solutions to BFSI as well as Public and Private Sector Establishments in Sri Lanka and the
+                Sultanate of Oman. The Company brings together competent people, processes and technologies from diverse backgrounds in
+                order to provide expertise in Strategy Planning, Processes, ICT, Financial Services, Trading and Real Estate.
               </p>
 
               <p>
-                With International strategic partners and a progressive company culture that emphasizes and nurtures
-                innovation and creativity, BPOS delivers unique solutions that bring value to its customers and
-                partners, which help make life easier, more productive and more enjoyable.
+                With International strategic partners and a progressive company culture that emphasizes and nurtures innovation and
+                creativity, BPOS delivers unique solutions that bring value to its customers and partners, which help make life easier, more
+                productive and more enjoyable.
               </p>
-
-              <div className='about-list'>
-                <ul>
-                  <li>
-                    <i className='flaticon-checked'></i>
-                    Save Money
-                  </li>
-                  <li>
-                    <i className='flaticon-checked'></i>
-                    Fast Application
-                  </li>
-                  <li>
-                    <i className='flaticon-checked'></i>
-                    Flexible Insurance
-                  </li>
-                  <li>
-                    <i className='flaticon-checked'></i>
-                    No Brokers, No Upselling
-                  </li>
-                  <li>
-                    <i className='flaticon-checked'></i>
-                    Investment Planning
-                  </li>
-                  <li>
-                    <i className='flaticon-checked'></i>
-                    Professional Advisor
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
 

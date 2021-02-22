@@ -11,10 +11,10 @@ const BlogDetails = () => {
         <React.Fragment>
             <NavbarTwo />
             <PageBanner 
-                pageTitle="Blog Details" 
+                pageTitle="News Details" 
                 homePageUrl="/" 
                 homePageText="Home" 
-                activePageText="Blog Details" 
+                activePageText="News Details" 
             /> 
 
             <div className="blog-details-area ptb-100">
@@ -44,7 +44,7 @@ const BlogDetails = () => {
                                         </ul>
                                     </div>
 
-                                    <h3>2020 Insurance Trends And Possible Challenge</h3>
+                                    <h3>2020 Trends And Possible Challenge</h3>
 
                                     <p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit, consectetur.</p>
 
@@ -77,7 +77,7 @@ const BlogDetails = () => {
                                 </div>
 
                                 {/* Comments & Form */}
-                                <Comments />
+                                {/* <Comments /> */}
                             </div>
                         </div>
 

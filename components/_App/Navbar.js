@@ -161,8 +161,8 @@ const Navbar = () => {
                 <div className='sidebar-modal-widget'>
                   <h3 className='title'>About Us</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores doloribus eum laboriosam praesentium
-                    delectus unde magni aut perspiciatis cumque deserunt dolore voluptate, autem pariatur.
+                    BPOS Global is a company set up in Oman and Sri Lanka with the objective of providing services and solutions to BFSI as
+                    well as Public and Private Sector Establishments in Sri Lanka and the Sultanate of Oman.
                   </p>
                 </div>
 
@@ -171,8 +171,13 @@ const Navbar = () => {
 
                   <ul>
                     <li>
-                      <Link href='/faq'>
-                        <a>FAQ</a>
+                      <Link href='/services'>
+                        <a>Products & Services</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href='/news-and-events'>
+                        <a>News & Events</a>
                       </Link>
                     </li>
                   </ul>
@@ -185,17 +190,17 @@ const Navbar = () => {
                     <li>
                       <i className='bx bx-location-plus'></i>
                       Address
-                      <span>123, Western Road, Melbourne Australia</span>
+                      <span>Office No 83, 8th Floor, Super Plaza Building, Azaiba, Sultanate of Oman</span>
                     </li>
                     <li>
                       <i className='bx bx-envelope'></i>
                       Email
-                      <a href='mailto:hello@flexa.com'>hello@bposllc.com</a>
+                      <a href='mailto:hello@flexa.com'>contact@bposllc.com</a>
                     </li>
                     <li>
                       <i className='bx bxs-phone-call'></i>
                       Phone
-                      <a href='tel:+822456974'>+822456974</a>
+                      <a href='tel:+822456974'>+968 2412 1845</a>
                     </li>
                   </ul>
                 </div>

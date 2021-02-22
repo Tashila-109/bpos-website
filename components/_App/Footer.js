@@ -18,8 +18,8 @@ const Footer = () => {
                 </Link>
 
                 <p>
-                  Lorem ipsum dolor sitamet,cons adipiscing elit, sed do eiusmod te incididunt ut labore et dolore Lorem
-                  ipsum dolor sitamet,cons adipiscing dolore Lorem ipsum dolor.
+                  Services to Banks, Government & Private Sector (Local & International), Focus on services related to non-core activities
+                  of our clients and End-2-End services covering processes, technology and people.
                 </p>
 
                 <div className='social-area'>
@@ -62,19 +62,19 @@ const Footer = () => {
                   <li>
                     <i className='flaticon-call'></i>
                     <span>Hotline:</span>
-                    <a href='tel:+822456974'>Phone: +822456974</a>
+                    <a href='tel:+822456974'>Phone: +968 2412 1845</a>
                   </li>
 
                   <li>
                     <i className='flaticon-email'></i>
                     <span>Email:</span>
-                    <a href='mailto:hello@flexa.com'>hello@bposllc.com</a>
+                    <a href='mailto:hello@flexa.com'>contact@bposllc.com</a>
                   </li>
 
                   <li>
                     <i className='flaticon-maps-and-flags'></i>
                     <span>Address:</span>
-                    123, Western Road, Melbourne Australia
+                    Office No 83, 8th Floor, Super Plaza Building, Azaiba, Sultanate of Oman
                   </li>
                 </ul>
               </div>
@@ -96,6 +96,11 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link href='/news-and-events'>
+                      <a>News & Events</a>
+                    </Link>
+                  </li>
+                  <li>
                     <Link href='/contact'>
                       <a>Contact Us</a>
                     </Link>
@@ -111,7 +116,7 @@ const Footer = () => {
         <div className='container'>
           <div className='copy-right'>
             <p>
-              Copyright @{currentYear} BPOS LLC Designed By{' '}
+              Copyright @{currentYear} BPOS LLC | Designed By{' '}
               <a href='https://kryolabz.com/' target='blank'>
                 Kryo Labz
               </a>

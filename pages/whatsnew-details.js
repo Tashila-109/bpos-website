@@ -1,27 +1,26 @@
 import React from 'react';
 import NavbarTwo from '../components/_App/NavbarTwo';
 import PageBanner from '../components/Common/PageBanner';
-import PortfolioSidebar from '../components/Portfolio/PortfolioSidebar';
+import WhatsNewSidebar from '../components/WhatsNew/WhatsNewSidebar';
 import Footer from '../components/_App/Footer';
-import QuestionForm from '../components/Portfolio/QuestionForm';
+import QuestionForm from '../components/WhatsNew/QuestionForm';
 
 const PortfolioDetails = () => {
     return (
         <React.Fragment>
             <NavbarTwo />
             <PageBanner 
-                pageTitle="Portfolio Details" 
+                pageTitle="Whats New Details" 
                 homePageUrl="/" 
                 homePageText="Home" 
-                activePageText="Portfolio Details" 
+                activePageText="Whats New Details" 
             /> 
 
             <div className="service-details-area ptb-100">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4">
-                            {/* Portfolio Sidebar */}
-                            <PortfolioSidebar />
+                            <WhatsNewSidebar />
                         </div>
 
                         <div className="col-lg-8">

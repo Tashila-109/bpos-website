@@ -1,7 +1,7 @@
 import React from 'react';
 import NavbarTwo from '../../components/_App/NavbarTwo';
 import PageBanner from '../../components/Common/PageBanner';
-import PortfolioSidebar from '../../components/Portfolio/PortfolioSidebar';
+import ServicesSidebar from '../../components/Services/ServicesSidebar';
 import Footer from '../../components/_App/Footer';
 import QuestionForm from '../../components/Services/QuestionsForm';
 
@@ -15,8 +15,7 @@ const Trading = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-4'>
-              {/* Portfolio Sidebar */}
-              <PortfolioSidebar />
+              <ServicesSidebar />
             </div>
 
             <div className='col-lg-8'>
@@ -26,10 +25,10 @@ const Trading = () => {
                 </div>
                 <h2>Imported Products & Produce</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis ducimus rerum sunt dignissimos
-                  libero et eum modi! Consequuntur rem incidunt et ducimus magnam sunt rerum hic beatae sed obcaecati.
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium asperiores eos obcaecati nostrum
-                  sed, corporis placeat quasi pariatur id, est iure, minus quibusdam.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis ducimus rerum sunt dignissimos libero et eum modi!
+                  Consequuntur rem incidunt et ducimus magnam sunt rerum hic beatae sed obcaecati. Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Laudantium asperiores eos obcaecati nostrum sed, corporis placeat quasi pariatur id, est iure, minus
+                  quibusdam.
                 </p>
 
                 <div className='car-service-list-wrap'>

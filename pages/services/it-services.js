@@ -1,7 +1,7 @@
 import React from 'react';
 import NavbarTwo from '../../components/_App/NavbarTwo';
 import PageBanner from '../../components/Common/PageBanner';
-import PortfolioSidebar from '../../components/Portfolio/PortfolioSidebar';
+import ServicesSidebar from '../../components/Services/ServicesSidebar';
 import Footer from '../../components/_App/Footer';
 import QuestionForm from '../../components/Services/QuestionsForm';
 
@@ -20,8 +20,7 @@ const ItServices = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-4'>
-              {/* Portfolio Sidebar */}
-              <PortfolioSidebar />
+              <ServicesSidebar />
             </div>
 
             <div className='col-lg-8'>

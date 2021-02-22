@@ -74,11 +74,29 @@ const NavbarTwo = () => {
                     </li>
 
                     <li className='nav-item'>
-                      <Link href='/about' activeClassName='active'>
-                        <a onClick={toggleNavbar} className='nav-link'>
-                          About Us
+                      <Link href='#' activeClassName='active'>
+                        <a onClick={e => e.preventDefault()} className='nav-link'>
+                          About Us <i className='bx bx-chevron-down'></i>
                         </a>
                       </Link>
+
+                      <ul className='dropdown-menu'>
+                        <li className='nav-item'>
+                          <Link href='/about' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              About Us
+                            </a>
+                          </Link>
+                        </li>
+
+                        <li className='nav-item'>
+                          <Link href='/shareholders' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              Our Shareholders
+                            </a>
+                          </Link>
+                        </li>
+                      </ul>
                     </li>
 
                     <li className='nav-item'>
@@ -93,6 +111,14 @@ const NavbarTwo = () => {
                       <Link href='/news-and-events' activeClassName='active'>
                         <a onClick={toggleNavbar} className='nav-link'>
                           News & Events
+                        </a>
+                      </Link>
+                    </li>
+
+                    <li className='nav-item'>
+                      <Link href='/whats-new' activeClassName='active'>
+                        <a onClick={toggleNavbar} className='nav-link'>
+                          Whats New
                         </a>
                       </Link>
                     </li>
@@ -182,6 +208,11 @@ const NavbarTwo = () => {
                     <li>
                       <Link href='/news-and-events'>
                         <a>News & Events</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href='/whats-new'>
+                        <a>Whats New</a>
                       </Link>
                     </li>
                   </ul>

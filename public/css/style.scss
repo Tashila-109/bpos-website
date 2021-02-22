@@ -1205,14 +1205,14 @@ About Area Style
       ul {
         overflow: hidden;
         li {
-          color: $heading-color;
+          color: #6e6e6e;
           font-size: 16px;
-          font-weight: 600;
+          font-weight: normal;
           font-family: $paragraph-font-family;
           position: relative;
           padding-left: 30px;
           margin-top: 10px;
-          width: 50%;
+          width: 100%;
           float: left;
           padding-right: 15px;
 
@@ -1221,7 +1221,6 @@ About Area Style
             font-weight: normal;
             position: absolute;
             left: 0;
-            top: -5px;
           }
         }
       }

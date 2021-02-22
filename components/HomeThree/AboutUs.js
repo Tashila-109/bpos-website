@@ -10,7 +10,7 @@ const AboutUs = () => {
           <div className='col-lg-6 col-md-6'>
             <div className='about-content'>
               <span>About Us</span>
-              <h2>BPOS Global About us Heading</h2>
+              <h2>About BPOS Global</h2>
 
               <p>
                 In today’s economy success can only be derived from a well-planned, well executed and agile

@@ -3,7 +3,7 @@ import NavbarTwo from '../components/_App/NavbarTwo';
 import PageBanner from '../components/Common/PageBanner';
 import OurServices from '../components/Services/OurServices';
 import ServiceDetails from '../components/Services/ServiceDetails';
-import GetAFreeQuoteFormStyleTwo from '../components/Common/GetAFreeQuoteFormStyleTwo';
+import ContactComponent from '../components/Common/ContactComponent';
 import OurVision from '../components/About/OurVision';
 import Footer from '../components/_App/Footer';
 
@@ -19,7 +19,7 @@ const Services = () => {
       />
       <OurServices />
       <ServiceDetails />
-      <GetAFreeQuoteFormStyleTwo />
+      <ContactComponent />
       <OurVision />
       <Footer />
     </React.Fragment>

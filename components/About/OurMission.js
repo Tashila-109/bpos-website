@@ -17,46 +17,16 @@ const OurMission = () => {
           <div className='col-lg-6'>
             <div className='vision-content'>
               <span>Our Mission</span>
-              <h2>We are Committed to Help Clients to Reach The Goals</h2>
+              <h2>Our Mission</h2>
+
+              <p>Be committed to achieve excellence by providing unparalleled solutions and value creation to our clients and partners</p>
 
               <p>
-                Committed to achieve excellence by providing unparalleled solutions and value creation to our clients
-                and partners.
+                Be innovative to develop customer centric solutions by maintaining the highest standards of professionalism and quality of
+                service.
               </p>
 
-              <p>
-                Innovative to develop customer centric solutions by maintaining the highest standards of professionalism
-                and quality of service. Nurture the talent of our team to be the best in what we do.
-              </p>
-
-              {/* <div className='vision-list'>
-                <ul>
-                  <li>
-                    <i className='bx bx-chevrons-right'></i>
-                    Save Money
-                  </li>
-                  <li>
-                    <i className='bx bx-chevrons-right'></i>
-                    Fast Application
-                  </li>
-                  <li>
-                    <i className='bx bx-chevrons-right'></i>
-                    Flexible Insurance
-                  </li>
-                  <li>
-                    <i className='bx bx-chevrons-right'></i>
-                    No Brokers, No Upselling
-                  </li>
-                  <li>
-                    <i className='bx bx-chevrons-right'></i>
-                    Investment Planning
-                  </li>
-                  <li>
-                    <i className='bx bx-chevrons-right'></i>
-                    Professional Advisor
-                  </li>
-                </ul>
-              </div> */}
+              <p>Develop our People to be the best in what we do.</p>
             </div>
           </div>
         </div>

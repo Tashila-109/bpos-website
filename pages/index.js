@@ -6,11 +6,10 @@ import AboutUs from '../components/HomeThree/AboutUs';
 import OurServices from '../components/HomeThree/OurServices';
 import FunFacts from '../components/Common/FunFacts';
 import OffersArea from '../components/Common/OffersArea';
-import GetAFreeQuoteFormStyleTwo from '../components/Common/GetAFreeQuoteFormStyleTwo';
+import ContactComponent from '../components/Common/ContactComponent';
 import TeamSlider from '../components/Common/TeamSlider';
 import OurPartners from '../components/HomeThree/OurPartners';
-import TestimonialStyleTwo from '../components/Common/TestimonialStyleTwo';
-import BlogPost from '../components/Common/BlogPost';
+import OurClients from '../components/Common/OurClients';
 import Footer from '../components/_App/Footer';
 
 const Index = () => {
@@ -23,8 +22,8 @@ const Index = () => {
       <OurServices />
       <FunFacts />
       <OurPartners />
-      <TestimonialStyleTwo />
-      <GetAFreeQuoteFormStyleTwo />
+      <OurClients />
+      <ContactComponent />
       <TeamSlider />
       <div className='pb-100'>
         <OffersArea />

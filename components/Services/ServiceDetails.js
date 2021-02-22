@@ -17,7 +17,7 @@ const ServiceDetails = () => {
             <div className='col-lg-6'>
               <div className='achievement-content'>
                 <span>Services at BPOS</span>
-                <h2>Another Headline here</h2>
+                <h2>Products & Services at BPOS Global</h2>
 
                 <p>
                   At BPOS we use strategic thinking and usability expertise to create better software solutions and

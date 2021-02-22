@@ -25,19 +25,19 @@ const PortfolioSidebar = () => {
         <h3 className='service-details-title'>Contact Info</h3>
         <ul>
           <li>
-            <a href='tel:+822456974'>
-              +822456974
+            <a href='tel:+968 2412 1845'>
+              +968 2412 1845
               <i className='bx bx-phone-call bx-rotate-270'></i>
             </a>
           </li>
           <li>
-            <a href='mailto:hello@flexa.com'>
-              hello@flexa.com
+            <a href='mailto:contact@bposllc.com'>
+              contact@bposllc.com
               <i className='bx bx-envelope'></i>
             </a>
           </li>
           <li>
-            9:00 AM – 8:00 PM
+            9:00 AM – 5:00 PM
             <i className='bx bx-time'></i>
           </li>
         </ul>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 const BlogSidebar = () => {
     return (
         <div className="widget-area" id="secondary">
-            <div className="widget widget_search">
+            {/* <div className="widget widget_search">
                 <h3 className="widget-title">Search Now</h3>
                 <div className="post-wrap">
                     <form className="search-form">
@@ -17,7 +17,7 @@ const BlogSidebar = () => {
                         </button>
                     </form>
                 </div>
-            </div>
+            </div> */}
 
             <div className="widget widget-peru-posts-thumb">
                 <h3 className="widget-title">Popular Posts</h3>

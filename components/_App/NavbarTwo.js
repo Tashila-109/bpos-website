@@ -90,6 +90,14 @@ const NavbarTwo = () => {
                     </li>
 
                     <li className='nav-item'>
+                      <Link href='/news-and-events' activeClassName='active'>
+                        <a onClick={toggleNavbar} className='nav-link'>
+                          News & Events
+                        </a>
+                      </Link>
+                    </li>
+
+                    <li className='nav-item'>
                       <Link href='/contact' activeClassName='active'>
                         <a onClick={toggleNavbar} className='nav-link'>
                           Contact
@@ -157,9 +165,8 @@ const NavbarTwo = () => {
                 <div className='sidebar-modal-widget'>
                   <h3 className='title'>About Us</h3>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores doloribus eum
-                    laboriosam praesentium delectus unde magni aut perspiciatis cumque deserunt dolore voluptate, autem
-                    pariatur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores doloribus eum laboriosam praesentium
+                    delectus unde magni aut perspiciatis cumque deserunt dolore voluptate, autem pariatur.
                   </p>
                 </div>
 

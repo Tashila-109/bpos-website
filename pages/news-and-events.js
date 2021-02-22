@@ -1,7 +1,7 @@
 import React from 'react';
 import NavbarTwo from '../components/_App/NavbarTwo';
 import PageBanner from '../components/Common/PageBanner';
-import BlogThreeGrid from '../components/Blog/BlogThreeGrid';
+import NewsThreeGrid from '../components/Blog/NewsThreeGrid';
 import Footer from '../components/_App/Footer';
 
 const BlogGrid = () => {
@@ -9,12 +9,12 @@ const BlogGrid = () => {
         <React.Fragment>
             <NavbarTwo />
             <PageBanner 
-                pageTitle="Blog Grid" 
+                pageTitle="News & Events" 
                 homePageUrl="/" 
                 homePageText="Home" 
-                activePageText="Blog Grid" 
+                activePageText="News & Events" 
             /> 
-            <BlogThreeGrid />
+            <NewsThreeGrid />
             <Footer />
         </React.Fragment>
     )

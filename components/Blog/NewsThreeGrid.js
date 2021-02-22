@@ -20,13 +20,13 @@ const BlogThreeGrid = () => {
                                     </li>
                                 </ul>
 
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a>
                                         <h3>2020 Insurance Trends And Possible Challenge</h3>
                                     </a>
                                 </Link>
 
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a className="read-more">
                                         Read More <i className="bx bx-plus"></i>
                                     </a>
@@ -49,13 +49,13 @@ const BlogThreeGrid = () => {
                                     </li>
                                 </ul>
 
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a>
                                         <h3>Global Trends In The Life Insurance Industry</h3>
                                     </a>
                                 </Link>
 
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a className="read-more">
                                         Read More <i className="bx bx-plus"></i>
                                     </a>
@@ -66,7 +66,7 @@ const BlogThreeGrid = () => {
 
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog">
-                            <Link href="/blog-details">
+                            <Link href="/news-details">
                                 <a><img src="/images/blog/blog3.jpg" alt="Image" /></a>
                             </Link>
 
@@ -78,13 +78,13 @@ const BlogThreeGrid = () => {
                                     </li>
                                 </ul>
                             
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a>
                                         <h3>Where And How To Watch Live Stream Today</h3>
                                     </a>
                                 </Link>
 
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a className="read-more">
                                         Read More <i className="bx bx-plus"></i>
                                     </a>
@@ -95,7 +95,7 @@ const BlogThreeGrid = () => {
 
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog">
-                            <Link href="/blog-details">
+                            <Link href="/news-details">
                                 <a><img src="/images/blog/blog4.jpg" alt="Image" /></a>
                             </Link>
 
@@ -107,13 +107,13 @@ const BlogThreeGrid = () => {
                                     </li>
                                 </ul>
                             
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a>
                                         <h3>Strategy For Norway’s Peion To Fund Global</h3>
                                     </a>
                                 </Link>
 
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a className="read-more">
                                         Read More <i className="bx bx-plus"></i>
                                     </a>
@@ -124,7 +124,7 @@ const BlogThreeGrid = () => {
 
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog">
-                            <Link href="/blog-details">
+                            <Link href="/news-details">
                                 <a><img src="/images/blog/blog5.jpg" alt="Image" /></a>
                             </Link>
 
@@ -136,13 +136,13 @@ const BlogThreeGrid = () => {
                                     </li>
                                 </ul>
                             
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a>
                                         <h3>Blackpool Polices Hunt For David Schwinger</h3>
                                     </a>
                                 </Link>
 
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a className="read-more">
                                         Read More <i className="bx bx-plus"></i>
                                     </a>
@@ -153,7 +153,7 @@ const BlogThreeGrid = () => {
 
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog">
-                            <Link href="/blog-details">
+                            <Link href="/news-details">
                                 <a><img src="/images/blog/blog6.jpg" alt="Image" /></a>
                             </Link>
 
@@ -165,13 +165,13 @@ const BlogThreeGrid = () => {
                                     </li>
                                 </ul>
                             
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a>
                                         <h3>Where And How To Watch Live Stream Today</h3>
                                     </a>
                                 </Link>
 
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a className="read-more">
                                         Read More <i className="bx bx-plus"></i>
                                     </a>
@@ -182,7 +182,7 @@ const BlogThreeGrid = () => {
 
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog">
-                            <Link href="/blog-details">
+                            <Link href="/news-details">
                                 <a><img src="/images/blog/blog7.jpg" alt="Image" /></a>
                             </Link>
 
@@ -194,7 +194,7 @@ const BlogThreeGrid = () => {
                                     </li>
                                 </ul>
                             
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a>
                                         <h3>Food Industry Leaders Often Change Theirs</h3>
                                     </a>
@@ -211,7 +211,7 @@ const BlogThreeGrid = () => {
 
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog">
-                            <Link href="/blog-details">
+                            <Link href="/news-details">
                                 <a><img src="/images/blog/blog8.jpg" alt="Image" /></a>
                             </Link>
 
@@ -223,13 +223,13 @@ const BlogThreeGrid = () => {
                                     </li>
                                 </ul>
                             
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a>
                                         <h3>How To Go About Initiating An Start-up</h3>
                                     </a>
                                 </Link>
 
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a className="read-more">
                                         Read More <i className="bx bx-plus"></i>
                                     </a>
@@ -240,7 +240,7 @@ const BlogThreeGrid = () => {
 
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog">
-                            <Link href="/blog-details">
+                            <Link href="/news-details">
                                 <a><img src="/images/blog/blog9.jpg" alt="Image" /></a>
                             </Link>
 
@@ -252,13 +252,13 @@ const BlogThreeGrid = () => {
                                     </li>
                                 </ul>
                             
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a>
                                         <h3>Reasons To Explain Fast Business Builder</h3>
                                     </a>
                                 </Link>
 
-                                <Link href="/blog-details">
+                                <Link href="/news-details">
                                     <a className="read-more">
                                         Read More <i className="bx bx-plus"></i>
                                     </a>

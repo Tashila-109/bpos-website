@@ -4,7 +4,7 @@ import PageBanner from '../components/Common/PageBanner';
 import NewsThreeGrid from '../components/Blog/NewsThreeGrid';
 import Footer from '../components/_App/Footer';
 
-const BlogGrid = () => {
+const NewsAndEvents = () => {
     return (
         <React.Fragment>
             <NavbarTwo />
@@ -20,4 +20,4 @@ const BlogGrid = () => {
     )
 }
 
-export default BlogGrid;
+export default NewsAndEvents;

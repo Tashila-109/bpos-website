@@ -98,6 +98,14 @@ const NavbarTwo = () => {
                     </li>
 
                     <li className='nav-item'>
+                      <Link href='/whats-new' activeClassName='active'>
+                        <a onClick={toggleNavbar} className='nav-link'>
+                          Whats New
+                        </a>
+                      </Link>
+                    </li>
+
+                    <li className='nav-item'>
                       <Link href='/contact' activeClassName='active'>
                         <a onClick={toggleNavbar} className='nav-link'>
                           Contact
@@ -182,6 +190,11 @@ const NavbarTwo = () => {
                     <li>
                       <Link href='/news-and-events'>
                         <a>News & Events</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href='/whats-new'>
+                        <a>Whats New</a>
                       </Link>
                     </li>
                   </ul>

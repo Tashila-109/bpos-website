@@ -28,7 +28,7 @@ const OurServices = () => {
 
           <div className='col-lg-6 col-sm-8'>
             <div className='single-choose'>
-              <span className='flaticon-technical-support'></span>
+              <span className='flaticon-target-1'></span>
               <h3>Cyber Security</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
 
@@ -44,7 +44,7 @@ const OurServices = () => {
         <div className='row'>
           <div className='col-lg-4 col-sm-6'>
             <div className='single-choose'>
-              <span className='flaticon-technical-support'></span>
+              <span className='flaticon-team'></span>
               <h3>Agency Representation</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
 
@@ -58,7 +58,7 @@ const OurServices = () => {
 
           <div className='col-lg-4 col-sm-6'>
             <div className='single-choose'>
-              <span className='flaticon-technical-support'></span>
+              <span className='flaticon-experience'></span>
               <h3>Event Management</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
 
@@ -72,7 +72,7 @@ const OurServices = () => {
 
           <div className='col-lg-4 col-sm-6'>
             <div className='single-choose'>
-              <span className='flaticon-technical-support'></span>
+              <span className='flaticon-maps-and-flags'></span>
               <h3>Delivery Channels</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
 

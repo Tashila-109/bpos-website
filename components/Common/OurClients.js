@@ -35,7 +35,7 @@ const options = {
   },
 };
 
-const TestimonialStyleTwo = () => {
+const OurClients = () => {
   const [display, setDisplay] = React.useState(false);
 
   React.useEffect(() => {
@@ -46,11 +46,7 @@ const TestimonialStyleTwo = () => {
       <div className='container'>
         <div className='section-title'>
           <span>Our Clients</span>
-          <h2>Something About Clients Here</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-          </p>
+          <h2>Our Clients</h2>
         </div>
 
         {display ? (
@@ -75,4 +71,4 @@ const TestimonialStyleTwo = () => {
   );
 };
 
-export default TestimonialStyleTwo;
+export default OurClients;

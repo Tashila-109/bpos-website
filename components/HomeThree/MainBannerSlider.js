@@ -35,8 +35,7 @@ const MainBannerSlider = () => {
                     <span>BPOS Global</span>
                     <h1>We Build long lasting Partnerships</h1>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto laborum eaque! Deserunt
-                      maxime, minus quas molestiae reiciendis esse natus nisi iure.
+                      Committed to achieve excellence by providing unparalleled solutions and value creation to our clients and partners
                     </p>
 
                     <div className='slider-btn'>
@@ -58,8 +57,8 @@ const MainBannerSlider = () => {
                     <span>Global Services</span>
                     <h1>Global Process Outsourcing Services LLC</h1>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto laborum eaque! Deserunt
-                      maxime, minus quas molestiae reiciendis esse natus nisi iure.
+                      Be innovative to develop customer centric solutions by maintaining the highest standards of professionalism and
+                      quality of service.
                     </p>
 
                     <div className='slider-btn'>
@@ -78,11 +77,11 @@ const MainBannerSlider = () => {
               <div className='d-table-cell'>
                 <div className='container'>
                   <div className='slider-text two'>
-                    <span>Services</span>
+                    <span>Our Services</span>
                     <h1>Our Services span over several domains</h1>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto laborum eaque! Deserunt
-                      maxime, minus quas molestiae reiciendis esse natus nisi iure.
+                      Services to Banks, Government & Private Sector (Local & International), Focus on services related to non-core
+                      activities of our clients and End-2-End services covering processes, technology and people
                     </p>
 
                     <div className='slider-btn'>

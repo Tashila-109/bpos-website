@@ -14,14 +14,14 @@ const OffersArea = () => {
 
           <div className='col-lg-6 col-md-6 p-0'>
             <div className='business-content'>
-              <h3>Put some nice headline here</h3>
+              <h3>Get Our Latest News Here Today</h3>
 
-              <Link href='/contact'>
-                <a className='default-btn active ml-0'>Contact Us</a>
+              <Link href='/news-and-events'>
+                <a className='default-btn active ml-0'>News & Events</a>
               </Link>
 
-              <p>
-                Call Us Today: <br /> +82546-564-234
+              <p className='pl-4'>
+                Call Us Today: <br /> +968 2412 1845
               </p>
             </div>
           </div>

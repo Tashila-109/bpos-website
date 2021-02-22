@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Link from 'next/link';
 
-export default class GetAFreeQuoteFormStyleTwo extends Component {
+export default class ContactComponent extends Component {
   // Tab
   openTabSection = (evt, tabNmae) => {
     let i, tabcontent, tablinks;
@@ -29,26 +29,23 @@ export default class GetAFreeQuoteFormStyleTwo extends Component {
               <div className='get-quat-content'>
                 <div className='section-title'>
                   <h2>Get In Touch With Us</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    dolore magna aliqua. Quis ipsum.
-                  </p>
+                  <p>Our team is happy to answer your questions. Fill out the form and we'll be in touch with you as soon as possible.</p>
                 </div>
                 <ul>
                   <li>
                     <i className='flaticon-maps-and-flags'></i>
                     <h3>Head Office Address</h3>
-                    <p>123, Western Road, Melbourne Australia</p>
+                    <p>Office No 83, 8th Floor, Super Plaza Building, Azaiba, Sultanate of Oman</p>
                   </li>
                   <li>
                     <i className='flaticon-call'></i>
-                    <h3>Head Office Address</h3>
-                    <p>+822456974</p>
+                    <h3>Phone</h3>
+                    <p>+968 2412 1845</p>
                   </li>
                   <li>
                     <i className='flaticon-email'></i>
-                    <h3>Mail Us For Information</h3>
-                    <p>hello@bposllc.com</p>
+                    <h3>Email Us For Information</h3>
+                    <p>contact@bposllc.com</p>
                   </li>
                 </ul>
               </div>

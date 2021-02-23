@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import ModalVideo from 'react-modal-video';
+import Image from 'next/image';
 
 const AboutUs = () => {
   return (
@@ -32,7 +32,7 @@ const AboutUs = () => {
 
           <div className='col-lg-6 col-md-6'>
             <div className='about-img-3'>
-              <img src='/images/about-img-5.jpg' alt='Image' />
+              <Image width='530' height='500' src='/images/about-img-5.jpg' alt='Home-About-us' />
             </div>
           </div>
         </div>

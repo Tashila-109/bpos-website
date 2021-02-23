@@ -12,7 +12,8 @@
   "author": "Kryo Labz",
   "license": "ISC",
   "dependencies": {
-    "next": "^9.5.5",
+    "axios": "^0.21.1",
+    "next": "^10.0.7",
     "next-on-netlify": "^2.6.3",
     "react": "^16.13.1",
     "react-accessible-accordion": "^3.3.3",

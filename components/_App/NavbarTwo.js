@@ -108,6 +108,32 @@ const NavbarTwo = () => {
                     </li>
 
                     <li className='nav-item'>
+                      <Link href='#' activeClassName='active'>
+                        <a onClick={e => e.preventDefault()} className='nav-link'>
+                          Clients & Partners <i className='bx bx-chevron-down'></i>
+                        </a>
+                      </Link>
+
+                      <ul className='dropdown-menu'>
+                        <li className='nav-item'>
+                          <Link href='/clients' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              Clients
+                            </a>
+                          </Link>
+                        </li>
+
+                        <li className='nav-item'>
+                          <Link href='/partners' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              Partners
+                            </a>
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li className='nav-item'>
                       <Link href='/news-and-events' activeClassName='active'>
                         <a onClick={toggleNavbar} className='nav-link'>
                           News & Events

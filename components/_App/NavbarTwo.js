@@ -101,10 +101,64 @@ const NavbarTwo = () => {
 
                     <li className='nav-item'>
                       <Link href='/services' activeClassName='active'>
-                        <a onClick={toggleNavbar} className='nav-link'>
+                        <a className='nav-link'>
                           Products & Services
+                          <i className='bx bx-chevron-down'></i>
                         </a>
                       </Link>
+
+                      <ul className='dropdown-menu'>
+                        <li className='nav-item'>
+                          <Link href='/services/it-services' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              ICT
+                            </a>
+                          </Link>
+                        </li>
+
+                        <li className='nav-item'>
+                          <Link href='/services/cybersecurity' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              Cyber Security
+                            </a>
+                          </Link>
+                        </li>
+                        <li className='nav-item'>
+                          <Link href='/services/agency-representation' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              Agency Representation
+                            </a>
+                          </Link>
+                        </li>
+                        <li className='nav-item'>
+                          <Link href='/services/event-management' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              Event Management
+                            </a>
+                          </Link>
+                        </li>
+                        <li className='nav-item'>
+                          <Link href='/services/delivery-channels' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              Delivery Channels
+                            </a>
+                          </Link>
+                        </li>
+                        <li className='nav-item'>
+                          <Link href='/services/trading' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              Trading
+                            </a>
+                          </Link>
+                        </li>
+                        <li className='nav-item'>
+                          <Link href='/services/support-services' activeClassName='active'>
+                            <a onClick={toggleNavbar} className='nav-link'>
+                              Support Services
+                            </a>
+                          </Link>
+                        </li>
+                      </ul>
                     </li>
 
                     <li className='nav-item'>

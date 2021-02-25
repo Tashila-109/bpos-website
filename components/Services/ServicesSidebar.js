@@ -7,7 +7,23 @@ const ServicesSidebar = () => {
         <h3 className='service-details-title'>Services</h3>
         <ul>
           <li>
-            IT Products & Services
+            ICT
+            <i className='bx bx-check'></i>
+          </li>
+          <li>
+            Cyber Security
+            <i className='bx bx-check'></i>
+          </li>
+          <li>
+            Agency Representation
+            <i className='bx bx-check'></i>
+          </li>
+          <li>
+            Event Management
+            <i className='bx bx-check'></i>
+          </li>
+          <li>
+            Delivery Channels
             <i className='bx bx-check'></i>
           </li>
           <li>

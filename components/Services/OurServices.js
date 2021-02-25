@@ -92,7 +92,7 @@ const OurServices = () => {
               <h3>Trading</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
 
-              <Link href='/insurance-details'>
+              <Link href='/services/trading'>
                 <a>
                   <i className='flaticon-right'></i>
                 </a>
@@ -106,7 +106,7 @@ const OurServices = () => {
               <h3>Non Core Support Services</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
 
-              <Link href='/insurance-details'>
+              <Link href='/services/support-services'>
                 <a>
                   <i className='flaticon-right'></i>
                 </a>

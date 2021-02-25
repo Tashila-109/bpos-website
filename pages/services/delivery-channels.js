@@ -7,11 +7,11 @@ import ServicesSidebar from '../../components/Services/ServicesSidebar';
 import Footer from '../../components/_App/Footer';
 import QuestionForm from '../../components/Services/QuestionsForm';
 
-const Trading = () => {
+const DeliveryChannels = () => {
   return (
     <React.Fragment>
       <NavbarTwo />
-      <PageBanner pageTitle='Trading' homePageUrl='/' homePageText='Home' activePageText='Trading' />
+      <PageBanner pageTitle='Delivery Channels' homePageUrl='/' homePageText='Home' activePageText='Delivery Channels' />
 
       <div className='service-details-area ptb-100'>
         <div className='container'>
@@ -23,9 +23,9 @@ const Trading = () => {
             <div className='col-lg-8'>
               <div className='service-details-wrap'>
                 <div className='service-img'>
-                  <Image width='730' height='600' src='/images/services/service-details3.jpg' alt='Service-Event-Management' />
+                  <Image width='730' height='600' src='/images/services/service-details7.jpg' alt='Service-Delivery-Channels' />
                 </div>
-                <h2>Trading</h2>
+                <h2>Delivery Channels</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis ducimus rerum sunt dignissimos libero et eum modi!
                   Consequuntur rem incidunt et ducimus magnam sunt rerum hic beatae sed obcaecati. Lorem ipsum dolor sit amet consectetur,
@@ -37,38 +37,12 @@ const Trading = () => {
                   <div className='row align-items-center'>
                     <div className='col-lg-6 col-md-6'>
                       <div className='car-service-list'>
-                        <ul>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Fruits & Vegetables
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Wood Shaving
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Processed Foods
-                          </li>
-                        </ul>
+                        <ul></ul>
                       </div>
                     </div>
                     <div className='col-lg-6 col-md-6'>
                       <div className='car-service-list'>
-                        <ul>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Biodegradable Tableware
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Horticulture Products
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Spices
-                          </li>
-                        </ul>
+                        <ul></ul>
                       </div>
                     </div>
                   </div>
@@ -87,4 +61,4 @@ const Trading = () => {
   );
 };
 
-export default Trading;
+export default DeliveryChannels;

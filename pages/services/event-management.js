@@ -7,11 +7,11 @@ import ServicesSidebar from '../../components/Services/ServicesSidebar';
 import Footer from '../../components/_App/Footer';
 import QuestionForm from '../../components/Services/QuestionsForm';
 
-const ItServices = () => {
+const EventManagement = () => {
   return (
     <React.Fragment>
       <NavbarTwo />
-      <PageBanner pageTitle='ICT Products & Services' homePageUrl='/' homePageText='Home' activePageText='ICT Products & Services' />
+      <PageBanner pageTitle='Event Management' homePageUrl='/' homePageText='Home' activePageText='Event Management' />
 
       <div className='service-details-area ptb-100'>
         <div className='container'>
@@ -23,9 +23,9 @@ const ItServices = () => {
             <div className='col-lg-8'>
               <div className='service-details-wrap'>
                 <div className='service-img'>
-                  <Image width='730' height='600' src='/images/services/service-details1.jpg' alt='Service-ICT' />
+                  <Image width='730' height='600' src='/images/services/service-details6.jpg' alt='Service-Event-Management' />
                 </div>
-                <h2>ICT (Information and Communication Technology)</h2>
+                <h2>Event Management</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veritatis ducimus rerum sunt dignissimos libero et eum modi!
                   Consequuntur rem incidunt et ducimus magnam sunt rerum hic beatae sed obcaecati. Lorem ipsum dolor sit amet consectetur,
@@ -40,31 +40,15 @@ const ItServices = () => {
                         <ul>
                           <li>
                             <i className='bx bx-check'></i>
-                            Customization
+                            Symposiums
                           </li>
                           <li>
                             <i className='bx bx-check'></i>
-                            Integration
+                            Road Shows
                           </li>
                           <li>
                             <i className='bx bx-check'></i>
-                            Maintenance & Support
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Process Re-engineering
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Data checking
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            BFSI Quality Competencies
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Process Automation
+                            Conferences
                           </li>
                         </ul>
                       </div>
@@ -74,31 +58,15 @@ const ItServices = () => {
                         <ul>
                           <li>
                             <i className='bx bx-check'></i>
-                            Core Banking System
+                            Brand Launching
                           </li>
                           <li>
                             <i className='bx bx-check'></i>
-                            Digital Signage
+                            Workshops
                           </li>
                           <li>
                             <i className='bx bx-check'></i>
-                            Oracle
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Quality Engineering
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Test Automation
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Quality Management
-                          </li>
-                          <li>
-                            <i className='bx bx-check'></i>
-                            Quality Testing
+                            Seminars
                           </li>
                         </ul>
                       </div>
@@ -119,4 +87,4 @@ const ItServices = () => {
   );
 };
 
-export default ItServices;
+export default EventManagement;

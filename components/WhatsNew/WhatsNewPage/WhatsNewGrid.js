@@ -16,7 +16,12 @@ const WhatsNewGrid = ({articleData}) => {
                 <div className='single-blog'>
                   <Link href={`/${value?.slug}`}>
                     <a>
-                      <Image width='570' height='400' src={`${process.env.API_URL}${value?.bannerImage?.url}`} alt='Image' />
+                      <Image
+                        width='570'
+                        height='400'
+                        src={`${process.env.API_URL}${value?.bannerImage?.url}`}
+                        alt={`Image-${value?.articleName}`}
+                      />
                     </a>
                   </Link>
 

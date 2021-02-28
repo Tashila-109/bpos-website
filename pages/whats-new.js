@@ -1,7 +1,7 @@
 import React from 'react';
 import NavbarTwo from '../components/_App/NavbarTwo';
 import PageBanner from '../components/Common/PageBanner';
-import PortfolioColumnsTwoCard from '../components/Portfolio/PortfolioColumnsTwoCard';
+import WhatsNewGrid from '../components/WhatsNew/WhatsNewPage/WhatsNewGrid';
 import Footer from '../components/_App/Footer';
 
 const WhatsNew = () => {
@@ -14,7 +14,7 @@ const WhatsNew = () => {
                 homePageText="Home" 
                 activePageText="Whats New" 
             /> 
-            <PortfolioColumnsTwoCard />
+            <WhatsNewGrid />
             <Footer />
         </React.Fragment>
     )

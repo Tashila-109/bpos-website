@@ -2,308 +2,49 @@ import React from 'react';
 import Link from 'next/link';
 import propTypes from 'prop-types';
 
+import Image from 'next/image';
+
 const WhatsNewGrid = ({articleData}) => {
   console.log(articleData);
   return (
     <div className='blog-area ptb-100'>
       <div className='container'>
         <div className='row'>
-          <div className='col-lg-4 col-md-6'>
-            <div className='single-blog'>
-              <Link href='/blog-details'>
-                <a>
-                  <img src='/images/blog/blog1.jpg' alt='Image' />
-                </a>
-              </Link>
+          {articleData &&
+            articleData?.map((value, index) => (
+              <div key={`whats-new-article-${value?.id}`} className='col-lg-4 col-md-6'>
+                <div className='single-blog'>
+                  <Link href={`/${value?.slug}`}>
+                    <a>
+                      <Image width='570' height='400' src={`${process.env.API_URL}${value?.bannerImage?.url}`} alt='Image' />
+                    </a>
+                  </Link>
 
-              <div className='blog-content'>
-                <ul>
-                  <li>10 April 2020</li>
-                  <li>
-                    <Link href='#'>
-                      <a>By Admin</a>
+                  <div className='blog-content'>
+                    <ul>
+                      <li>10 April 2020</li>
+                      <li>
+                        <Link href='#'>
+                          <a>{value?.authorName}</a>
+                        </Link>
+                      </li>
+                    </ul>
+
+                    <Link href={`/${value?.slug}`}>
+                      <a>
+                        <h3>{value?.articleName}</h3>
+                      </a>
                     </Link>
-                  </li>
-                </ul>
 
-                <Link href='/news-details'>
-                  <a>
-                    <h3>2020 Insurance Trends And Possible Challenge</h3>
-                  </a>
-                </Link>
-
-                <Link href='/news-details'>
-                  <a className='read-more'>
-                    Read More <i className='bx bx-plus'></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-lg-4 col-md-6'>
-            <div className='single-blog'>
-              <Link href='/blog-details'>
-                <a>
-                  <img src='/images/blog/blog2.jpg' alt='Image' />
-                </a>
-              </Link>
-
-              <div className='blog-content'>
-                <ul>
-                  <li>11 April 2020</li>
-                  <li>
-                    <Link href='#'>
-                      <a>By Admin</a>
+                    <Link href={`/${value?.slug}`}>
+                      <a className='read-more'>
+                        Read More <i className='bx bx-plus'></i>
+                      </a>
                     </Link>
-                  </li>
-                </ul>
-
-                <Link href='/news-details'>
-                  <a>
-                    <h3>Global Trends In The Life Insurance Industry</h3>
-                  </a>
-                </Link>
-
-                <Link href='/news-details'>
-                  <a className='read-more'>
-                    Read More <i className='bx bx-plus'></i>
-                  </a>
-                </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div className='col-lg-4 col-md-6'>
-            <div className='single-blog'>
-              <Link href='/news-details'>
-                <a>
-                  <img src='/images/blog/blog3.jpg' alt='Image' />
-                </a>
-              </Link>
-
-              <div className='blog-content'>
-                <ul>
-                  <li>13 April 2020</li>
-                  <li>
-                    <Link href='#'>
-                      <a>By Admin</a>
-                    </Link>
-                  </li>
-                </ul>
-
-                <Link href='/news-details'>
-                  <a>
-                    <h3>Where And How To Watch Live Stream Today</h3>
-                  </a>
-                </Link>
-
-                <Link href='/news-details'>
-                  <a className='read-more'>
-                    Read More <i className='bx bx-plus'></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-lg-4 col-md-6'>
-            <div className='single-blog'>
-              <Link href='/news-details'>
-                <a>
-                  <img src='/images/blog/blog4.jpg' alt='Image' />
-                </a>
-              </Link>
-
-              <div className='blog-content'>
-                <ul>
-                  <li>14 April 2020</li>
-                  <li>
-                    <Link href='#'>
-                      <a>By Admin</a>
-                    </Link>
-                  </li>
-                </ul>
-
-                <Link href='/news-details'>
-                  <a>
-                    <h3>Strategy For Norway’s Peion To Fund Global</h3>
-                  </a>
-                </Link>
-
-                <Link href='/news-details'>
-                  <a className='read-more'>
-                    Read More <i className='bx bx-plus'></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-lg-4 col-md-6'>
-            <div className='single-blog'>
-              <Link href='/news-details'>
-                <a>
-                  <img src='/images/blog/blog5.jpg' alt='Image' />
-                </a>
-              </Link>
-
-              <div className='blog-content'>
-                <ul>
-                  <li>15 April 2020</li>
-                  <li>
-                    <Link href='#'>
-                      <a>By Admin</a>
-                    </Link>
-                  </li>
-                </ul>
-
-                <Link href='/news-details'>
-                  <a>
-                    <h3>Blackpool Polices Hunt For David Schwinger</h3>
-                  </a>
-                </Link>
-
-                <Link href='/news-details'>
-                  <a className='read-more'>
-                    Read More <i className='bx bx-plus'></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-lg-4 col-md-6'>
-            <div className='single-blog'>
-              <Link href='/news-details'>
-                <a>
-                  <img src='/images/blog/blog6.jpg' alt='Image' />
-                </a>
-              </Link>
-
-              <div className='blog-content'>
-                <ul>
-                  <li>16 April 2020</li>
-                  <li>
-                    <Link href='#'>
-                      <a>By Admin</a>
-                    </Link>
-                  </li>
-                </ul>
-
-                <Link href='/news-details'>
-                  <a>
-                    <h3>Where And How To Watch Live Stream Today</h3>
-                  </a>
-                </Link>
-
-                <Link href='/news-details'>
-                  <a className='read-more'>
-                    Read More <i className='bx bx-plus'></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-lg-4 col-md-6'>
-            <div className='single-blog'>
-              <Link href='/news-details'>
-                <a>
-                  <img src='/images/blog/blog7.jpg' alt='Image' />
-                </a>
-              </Link>
-
-              <div className='blog-content'>
-                <ul>
-                  <li>17 April 2020</li>
-                  <li>
-                    <Link href='#'>
-                      <a>By Admin</a>
-                    </Link>
-                  </li>
-                </ul>
-
-                <Link href='/news-details'>
-                  <a>
-                    <h3>Food Industry Leaders Often Change Theirs</h3>
-                  </a>
-                </Link>
-
-                <Link href='/blog-details'>
-                  <a className='read-more'>
-                    Read More <i className='bx bx-plus'></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-lg-4 col-md-6'>
-            <div className='single-blog'>
-              <Link href='/news-details'>
-                <a>
-                  <img src='/images/blog/blog8.jpg' alt='Image' />
-                </a>
-              </Link>
-
-              <div className='blog-content'>
-                <ul>
-                  <li>18 April 2020</li>
-                  <li>
-                    <Link href='#'>
-                      <a>By Admin</a>
-                    </Link>
-                  </li>
-                </ul>
-
-                <Link href='/news-details'>
-                  <a>
-                    <h3>How To Go About Initiating An Start-up</h3>
-                  </a>
-                </Link>
-
-                <Link href='/news-details'>
-                  <a className='read-more'>
-                    Read More <i className='bx bx-plus'></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-lg-4 col-md-6'>
-            <div className='single-blog'>
-              <Link href='/news-details'>
-                <a>
-                  <img src='/images/blog/blog9.jpg' alt='Image' />
-                </a>
-              </Link>
-
-              <div className='blog-content'>
-                <ul>
-                  <li>19 April 2020</li>
-                  <li>
-                    <Link href='#'>
-                      <a>By Admin</a>
-                    </Link>
-                  </li>
-                </ul>
-
-                <Link href='/news-details'>
-                  <a>
-                    <h3>Reasons To Explain Fast Business Builder</h3>
-                  </a>
-                </Link>
-
-                <Link href='/news-details'>
-                  <a className='read-more'>
-                    Read More <i className='bx bx-plus'></i>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
+            ))}
 
           <div className='col-lg-12'>
             <div className='page-navigation-area'>

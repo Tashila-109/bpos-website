@@ -7,5 +7,5 @@ export const GetWhatsNewData = () => {
     method: 'get',
   };
 
-  return BposApiAxiosInstance(config);
+  return BposApiAxiosInstance.request(config);
 };

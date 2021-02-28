@@ -1,4 +1,5 @@
 import React from 'react';
+
 import NavbarTwo from '../components/_App/NavbarTwo';
 import PageBanner from '../components/Common/PageBanner';
 import OurServices from '../components/Services/OurServices';
@@ -11,12 +12,7 @@ const Services = () => {
   return (
     <React.Fragment>
       <NavbarTwo />
-      <PageBanner
-        pageTitle='Products & Services'
-        homePageUrl='/'
-        homePageText='Home'
-        activePageText='Products & Services'
-      />
+      <PageBanner pageTitle='Products & Services' homePageUrl='/' homePageText='Home' activePageText='Products & Services' />
       <OurServices />
       <ServiceDetails />
       <ContactComponent />

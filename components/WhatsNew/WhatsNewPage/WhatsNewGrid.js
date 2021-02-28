@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import propTypes from 'prop-types';
 
-const WhatsNewGrid = () => {
+const WhatsNewGrid = ({articleData}) => {
+  console.log(articleData);
   return (
     <div className='blog-area ptb-100'>
       <div className='container'>
@@ -342,6 +344,13 @@ const WhatsNewGrid = () => {
       </div>
     </div>
   );
+};
+
+WhatsNewGrid.propTypes = {
+  articleData: propTypes.array,
+};
+WhatsNewGrid.defaultProps = {
+  articleData: [],
 };
 
 export default WhatsNewGrid;

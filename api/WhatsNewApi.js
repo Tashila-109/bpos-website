@@ -9,3 +9,13 @@ export const GetWhatsNewData = () => {
 
   return BposApiAxiosInstance.request(config);
 };
+
+// Get Whats New Article by Slug
+export const GetArticleBySlug = slug => {
+  const config = {
+    url: `/whats-new-articles?slug=${slug}`,
+    method: 'get',
+  };
+
+  return BposApiAxiosInstance.request(config);
+};

@@ -15,7 +15,7 @@ const WhatsNewGrid = ({articleData}) => {
             articleData?.map((value, index) => (
               <div key={`whats-new-article-${value?.id}`} className='col-lg-4 col-md-6'>
                 <div className='single-blog'>
-                  <Link href={`/${value?.slug}`}>
+                  <Link href='/whats-new/[slug]' as={`/whats-new/${value?.slug}`}>
                     <a>
                       <Image
                         width='570'
@@ -36,13 +36,13 @@ const WhatsNewGrid = ({articleData}) => {
                       </li>
                     </ul>
 
-                    <Link href={`/${value?.slug}`}>
+                    <Link href='/whats-new/[slug]' as={`/whats-new/${value?.slug}`}>
                       <a>
                         <h3>{value?.articleName}</h3>
                       </a>
                     </Link>
 
-                    <Link href={`/${value?.slug}`}>
+                    <Link href='/whats-new/[slug]' as={`/whats-new/${value?.slug}`}>
                       <a className='read-more'>
                         Read More <i className='bx bx-plus'></i>
                       </a>

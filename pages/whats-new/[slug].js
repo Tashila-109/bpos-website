@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 import NavbarTwo from '../../components/_App/NavbarTwo';
 import PageBanner from '../../components/Common/PageBanner';
@@ -8,11 +9,18 @@ import ArticleSidebar from '../../components/WhatsNew/ArticleSideBar';
 import {GetWhatsNewData, GetArticleBySlug} from '../../api/WhatsNewApi';
 
 const WhatsNewArticle = ({article}) => {
-  console.log(article)
+  console.log(article);
   return (
     <React.Fragment>
       <NavbarTwo />
-      <PageBanner pageTitle='News Details' homePageUrl='/' homePageText='Home' activePageText='News Details' />
+      <PageBanner
+        pageTitle='News Details'
+        homePageUrl='/'
+        homePageText='Home'
+        activePageText='News Details'
+        secondaryPageText='Whats New'
+        secondaryPageUrl='/whats-new'
+      />
 
       <div className='blog-details-area ptb-100'>
         <div className='container'>
@@ -30,6 +38,10 @@ const WhatsNewArticle = ({article}) => {
       <Footer />
     </React.Fragment>
   );
+};
+
+WhatsNewArticle.propTypes = {
+  article: propTypes.object.isRequired,
 };
 
 export const getStaticPaths = async () => {

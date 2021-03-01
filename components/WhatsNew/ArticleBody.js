@@ -12,7 +12,7 @@ const ArticleBody = ({article}) => {
         <div className='article-image'>
           <Image
             width='730'
-            height='520'
+            height='500'
             src={`${process.env.API_URL}${article?.bannerImage?.url}`}
             alt={`Image-${article?.articleName}`}
           />

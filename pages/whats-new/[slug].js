@@ -8,8 +8,7 @@ import ArticleBody from '../../components/WhatsNew/ArticleBody';
 import ArticleSidebar from '../../components/WhatsNew/ArticleSideBar';
 import {GetWhatsNewData, GetArticleBySlug} from '../../api/WhatsNewApi';
 
-const WhatsNewArticle = ({article}) => {
-  console.log(article);
+const WhatsNewArticle = ({article, articlesData}) => {
   return (
     <React.Fragment>
       <NavbarTwo />
@@ -28,7 +27,7 @@ const WhatsNewArticle = ({article}) => {
             <ArticleBody article={article} />
             <div className='col-lg-4 col-md-12'>
               <div className='blog-right-sidebar'>
-                <ArticleSidebar />
+                <ArticleSidebar selectedArticle={article} articlesData={articlesData} />
               </div>
             </div>
           </div>
@@ -42,6 +41,7 @@ const WhatsNewArticle = ({article}) => {
 
 WhatsNewArticle.propTypes = {
   article: propTypes.object.isRequired,
+  articlesData: propTypes.array.isRequired,
 };
 
 export const getStaticPaths = async () => {
@@ -56,11 +56,13 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({params}) => {
-  const data = await GetArticleBySlug(params.slug);
+  const articleData = await GetArticleBySlug(params.slug);
+  const allData = await GetWhatsNewData();
 
   return {
     props: {
-      article: data?.data[0],
+      article: articleData?.data[0],
+      articlesData: allData?.data,
     },
   };
 };

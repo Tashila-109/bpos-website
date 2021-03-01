@@ -1,7 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import propTypes from 'prop-types';
 
-const ArticleSidebar = () => {
+import {articleDateFormat} from '../../helpers/dateHelper';
+
+const ArticleSidebar = ({selectedArticle, articlesData}) => {
   return (
     <div className='widget-area' id='secondary'>
       {/* <div className="widget widget_search">
@@ -18,84 +22,39 @@ const ArticleSidebar = () => {
                     </form>
                 </div>
             </div> */}
-
       <div className='widget widget-peru-posts-thumb'>
         <h3 className='widget-title'>Popular Posts</h3>
         <div className='post-wrap'>
-          <div className='item'>
-            <Link href='/blog-details'>
-              <a className='thumb'>
-                <span className='fullimage cover bg1' role='img'></span>
-              </a>
-            </Link>
-            <div className='info'>
-              <span>April 20, 2020</span>
-              <h4 className='title usmall'>
-                <Link href='/blog-details'>
-                  <a>Where And How To Watch Live Stream Today</a>
-                </Link>
-              </h4>
-            </div>
-
-            <div className='clear'></div>
-          </div>
-
-          <div className='item'>
-            <Link href='/blog-details'>
-              <a className='thumb'>
-                <span className='fullimage cover bg2' role='img'></span>
-              </a>
-            </Link>
-            <div className='info'>
-              <span>April 21, 2020</span>
-
-              <h4 className='title usmall'>
-                <Link href='/blog-details'>
-                  <a>The Five Devices You Need To Work Anytime</a>
-                </Link>
-              </h4>
-            </div>
-
-            <div className='clear'></div>
-          </div>
-
-          <div className='item'>
-            <Link href='/blog-details'>
-              <a className='thumb'>
-                <span className='fullimage cover bg3' role='img'></span>
-              </a>
-            </Link>
-
-            <div className='info'>
-              <span>April 22, 2020</span>
-              <h4 className='title usmall'>
-                <Link href='/blog-details'>
-                  <a>Blackpool Polices Hunt For David Schwinger</a>
-                </Link>
-              </h4>
-            </div>
-
-            <div className='clear'></div>
-          </div>
-
-          <div className='item'>
-            <Link href='/blog-details'>
-              <a className='thumb'>
-                <span className='fullimage cover bg4' role='img'></span>
-              </a>
-            </Link>
-
-            <div className='info'>
-              <span>April 23, 2020</span>
-              <h4 className='title usmall'>
-                <Link href='/blog-details'>
-                  <a>Do You Do The Fixing And The Execution Of Yourselves?</a>
-                </Link>
-              </h4>
-            </div>
-
-            <div className='clear'></div>
-          </div>
+          {articlesData &&
+            articlesData.map((article, index) => {
+              let result = null;
+              if (index < 5 && selectedArticle.id !== article.id) {
+                result = (
+                  <div key={`popular-posts-${article?.slug}`} className='item'>
+                    <Link href={`/whats-new/${article?.slug}`}>
+                      <a className='thumb'>
+                        <Image
+                          width='100'
+                          height='80'
+                          src={`${process.env.API_URL}${article?.bannerImage?.url}`}
+                          alt={`Popular-post-${article?.articleName}`}
+                        />
+                      </a>
+                    </Link>
+                    <div className='info'>
+                      <span>{articleDateFormat(article?.published_at)}</span>
+                      <h4 className='title usmall'>
+                        <Link href='/blog-details'>
+                          <a>{article?.articleName}</a>
+                        </Link>
+                      </h4>
+                    </div>
+                    <div className='clear'></div>
+                  </div>
+                );
+              }
+              return result;
+            })}
         </div>
       </div>
 
@@ -181,6 +140,15 @@ const ArticleSidebar = () => {
       </div> */}
     </div>
   );
+};
+
+ArticleSidebar.propTypes = {
+  articlesData: propTypes.array,
+  selectedArticle: propTypes.object,
+};
+ArticleSidebar.defaultProps = {
+  articlesData: [],
+  selectedArticle: {},
 };
 
 export default ArticleSidebar;

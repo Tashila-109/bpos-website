@@ -99,7 +99,7 @@ const ArticleSidebar = () => {
         </div>
       </div>
 
-      <div className='widget widget_categories'>
+      {/* <div className='widget widget_categories'>
         <h3 className='widget-title'>Categories</h3>
         <div className='post-wrap'>
           <ul>
@@ -147,9 +147,9 @@ const ArticleSidebar = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
-      <div className='widget widget_tag_cloud'>
+      {/* <div className='widget widget_tag_cloud'>
         <h3 className='widget-title'>Tags</h3>
         <div className='post-wrap'>
           <div className='tagcloud'>
@@ -178,7 +178,7 @@ const ArticleSidebar = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -30,9 +30,7 @@ const WhatsNewGrid = ({articleData}) => {
                     <ul>
                       <li>{articleDateFormat(value?.published_at)}</li>
                       <li>
-                        <Link href='#'>
-                          <a>{value?.authorName}</a>
-                        </Link>
+                        <a>{value?.authorName}</a>
                       </li>
                     </ul>
 

@@ -14,10 +14,10 @@ const WhatsNewArticle = ({article}) => {
     <React.Fragment>
       <NavbarTwo />
       <PageBanner
-        pageTitle='News Details'
+        pageTitle={article.articleName}
         homePageUrl='/'
         homePageText='Home'
-        activePageText='News Details'
+        activePageText={article.articleName}
         secondaryPageText='Whats New'
         secondaryPageUrl='/whats-new'
       />

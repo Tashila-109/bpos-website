@@ -1,13 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
 import propTypes from 'prop-types';
+import Image from 'next/image';
+
+import {articleDateFormat} from '../../helpers/dateHelper';
 
 const ArticleBody = ({article}) => {
   return (
     <div className='col-lg-8 col-md-12'>
       <div className='blog-details-desc'>
         <div className='article-image'>
-          <img src='/images/blog-details/blog-details.jpg' alt='image' />
+          <Image
+            width='730'
+            height='500'
+            src={`${process.env.API_URL}${article?.bannerImage?.url}`}
+            alt={`Image-${article?.articleName}`}
+          />
         </div>
 
         <div className='article-content'>
@@ -15,20 +23,16 @@ const ArticleBody = ({article}) => {
             <ul>
               <li>
                 <span>Posted On:</span>
-                <Link href='#'>
-                  <a>April 20 , 2020</a>
-                </Link>
+                <a>{articleDateFormat(article?.published_at)}</a>
               </li>
               <li>
                 <span>Posted By:</span>
-                <Link href='#'>
-                  <a>John Anderson</a>
-                </Link>
+                <a>{article?.authorName}</a>
               </li>
             </ul>
           </div>
 
-          <h3>2020 Trends And Possible Challenge</h3>
+          <h3>{article?.articleName}</h3>
 
           <p>
             Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut

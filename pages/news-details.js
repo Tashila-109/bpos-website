@@ -75,9 +75,6 @@ const BlogDetails = () => {
                                         </div>
                                     </div>
                                 </div>
-
-                                {/* Comments & Form */}
-                                {/* <Comments /> */}
                             </div>
                         </div>
 

@@ -5,6 +5,10 @@ module.exports = {
     API_URL: process.env.API_URL,
   },
 
+  images: {
+    domains: ['cms.bposllc.com'],
+  },
+
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },

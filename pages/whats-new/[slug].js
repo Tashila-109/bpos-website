@@ -64,6 +64,7 @@ export const getStaticProps = async ({params}) => {
       article: articleData?.data[0],
       articlesData: allData?.data,
     },
+    revalidate: 1,
   };
 };
 

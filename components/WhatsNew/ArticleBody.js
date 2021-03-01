@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
+import propTypes from 'prop-types';
 
-const ArticleBody = () => {
+const ArticleBody = ({article}) => {
   return (
     <div className='col-lg-8 col-md-12'>
       <div className='blog-details-desc'>
@@ -93,3 +94,7 @@ const ArticleBody = () => {
 };
 
 export default ArticleBody;
+
+ArticleBody.propTypes = {
+  article: propTypes.object.isRequired,
+};

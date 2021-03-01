@@ -25,7 +25,7 @@ const WhatsNewArticle = ({article}) => {
       <div className='blog-details-area ptb-100'>
         <div className='container'>
           <div className='row'>
-            <ArticleBody />
+            <ArticleBody article={article} />
             <div className='col-lg-4 col-md-12'>
               <div className='blog-right-sidebar'>
                 <ArticleSidebar />

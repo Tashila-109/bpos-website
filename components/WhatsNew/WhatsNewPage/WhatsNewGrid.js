@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import propTypes from 'prop-types';
-
 import Image from 'next/image';
+
+import {articleDateFormat} from '../../../helpers/dateHelper';
 
 const WhatsNewGrid = ({articleData}) => {
   console.log(articleData);
@@ -27,7 +28,7 @@ const WhatsNewGrid = ({articleData}) => {
 
                   <div className='blog-content'>
                     <ul>
-                      <li>10 April 2020</li>
+                      <li>{articleDateFormat(value?.published_at)}</li>
                       <li>
                         <Link href='#'>
                           <a>{value?.authorName}</a>

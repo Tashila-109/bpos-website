@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 import Link from 'next/link';
 
 export default class ContactComponent extends PureComponent {
-  props = {
+  static propTypes = {
     contactInformation: propTypes.object.isRequired,
   };
   // Tab

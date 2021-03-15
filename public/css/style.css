@@ -51,6 +51,7 @@ body {
   line-height: 1.8;
   font-family: "Roboto", sans-serif;
   color: #6e6e6e;
+  white-space: pre-line;
 }
 
 a {
@@ -1247,7 +1248,6 @@ Choose Us Area Style
 .single-choose p {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  min-height: 162px;
 }
 
 .single-choose a i {
@@ -2985,8 +2985,6 @@ Services Area Three
 
 .services-area-three .single-choose h3 {
   color: #ffffff;
-  min-height: 162px;
-
 }
 
 .services-area-three .single-choose p {

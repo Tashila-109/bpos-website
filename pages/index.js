@@ -22,8 +22,8 @@ const Index = ({data}) => {
       <Navbar />
       <MainBannerSlider bannerData={data} />
       <OurFeatures featuresData={data} />
-      <AboutUs />
-      <OurServices />
+      <AboutUs aboutUsData={data}/>
+      <OurServices businessVerticals={data.businessVerticals} />
       <FunFacts />
       <OurPartners />
       <OurClients />

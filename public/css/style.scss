@@ -64,6 +64,7 @@ body {
   line-height: 1.8;
   font-family: $body-font-family;
   color: $body-color;
+  white-space: pre-line;
 }
 a {
   display: inline-block;
@@ -2693,7 +2694,6 @@ Services Area Three
     }
     p {
       color: $white-color;
-      min-height: 162px;
     }
     &:hover {
       background-color: $heading-color;

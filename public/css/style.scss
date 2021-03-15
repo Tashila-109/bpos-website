@@ -64,6 +64,7 @@ body {
   line-height: 1.8;
   font-family: $body-font-family;
   color: $body-color;
+  white-space: pre-line;
 }
 a {
   display: inline-block;
@@ -2400,6 +2401,9 @@ Testimonial Wrap Two Style
         font-size: 18px;
       }
     }
+    .client-text:hover {
+      cursor: pointer;
+    }
     .quotes {
       position: absolute;
       bottom: 10px;
@@ -2652,6 +2656,9 @@ Choose Us Area Three
     }
     &:hover {
       background-color: $heading-color;
+    }
+    p {
+      min-height: 162px;
     }
   }
 }

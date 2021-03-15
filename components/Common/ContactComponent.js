@@ -40,17 +40,17 @@ export default class ContactComponent extends PureComponent {
                   <li>
                     <i className='flaticon-maps-and-flags'></i>
                     <h3>Head Office Address</h3>
-                    <p>{contactInformation.officeAddress}</p>
+                    <p>{contactInformation?.officeAddress}</p>
                   </li>
                   <li>
                     <i className='flaticon-call'></i>
                     <h3>Phone</h3>
-                    <p>{contactInformation.phoneNumber}</p>
+                    <p>{contactInformation?.phoneNumber}</p>
                   </li>
                   <li>
                     <i className='flaticon-email'></i>
                     <h3>Email Us For Information</h3>
-                    <p>{contactInformation.email}</p>
+                    <p>{contactInformation?.email}</p>
                   </li>
                 </ul>
               </div>

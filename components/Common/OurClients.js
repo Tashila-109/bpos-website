@@ -1,8 +1,11 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
+import propTypes from 'prop-types';
+import Link from 'next/link';
+
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
-import {Clients} from '../../constants/Clients'
+import {Clients} from '../../constants/Clients';
 
 const options = {
   loop: true,
@@ -35,7 +38,7 @@ const options = {
   },
 };
 
-const OurClients = () => {
+const OurClients = ({clients}) => {
   const [display, setDisplay] = React.useState(false);
 
   React.useEffect(() => {
@@ -51,13 +54,15 @@ const OurClients = () => {
 
         {display ? (
           <OwlCarousel className='testimonial-wrap-two owl-carousel owl-theme' {...options}>
-            {Clients.map((value, index) => (
-              <div className='single-client'>
-                <div className='client-text'>
-                  <img src={`/images/testimonials/client${index + 1}.jpg`} alt={`client-${index + 1}`} />
-                  <h3>{value.name}</h3>
-                  <span>{value.country}</span>
-                </div>
+            {clients.map(value => (
+              <div key={value.id} className='single-client'>
+                <Link href={value.url ? value.url : '#'}>
+                  <div className='client-text'>
+                    <img src={`${process.env.API_URL}${value?.image.url}`} alt={`client-${value.id}`} />
+                    <h3>{value.name}</h3>
+                    <span>{value.country}</span>
+                  </div>
+                </Link>
 
                 <p>{value.description}</p>
               </div>
@@ -71,4 +76,10 @@ const OurClients = () => {
   );
 };
 
+OurClients.propTypes = {
+  clients: propTypes.array,
+};
+OurClients.defaultProps = {
+  clients: [],
+};
 export default OurClients;

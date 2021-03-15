@@ -1,49 +1,48 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
-const FunFacts = () => {
+const FunFacts = ({companyData}) => {
   return (
     <div className='counter-area pt-100 pb-70'>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-3 col-md-6 col-sm-6'>
             <div className='single-counter'>
-              <h2>
-                2008
-              </h2>
-              <p>Established In</p>
+              <h2>{companyData?.factOne}</h2>
+              <p>{companyData?.factOneDescription}</p>
+            </div>
+          </div>
+
+          <div className='col-lg-3 col-md-6 col-sm-6'>
+            <div className='single-counter'>
+              <h2>{companyData?.factTwo}</h2>
+              <p>{companyData?.factTwoDescription}</p>
             </div>
           </div>
 
           <div className='col-lg-3 col-md-6 col-sm-6'>
             <div className='single-counter'>
               <h2>
-                15
+                {companyData?.factThree} <span className='traget'>+</span>
               </h2>
-              <p>Team of Professionals</p>
+              <p>{companyData?.factThreeDescription}</p>
             </div>
           </div>
 
           <div className='col-lg-3 col-md-6 col-sm-6'>
             <div className='single-counter'>
-              <h2>
-                50 <span className='traget'>+</span>
-              </h2>
-              <p>Projects Implemented & Delivered</p>
-            </div>
-          </div>
-
-          <div className='col-lg-3 col-md-6 col-sm-6'>
-            <div className='single-counter'>
-              <h2>
-                First
-              </h2>
-              <p>Registered company in Oman for ATM management activity</p>
+              <h2>{companyData?.factFour}</h2>
+              <p>{companyData?.factFourDescription}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
+};
+
+FunFacts.propTypes = {
+  companyData: propTypes.object.isRequired,
 };
 
 export default FunFacts;

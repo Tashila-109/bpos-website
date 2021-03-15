@@ -24,10 +24,10 @@ const Index = ({data}) => {
       <OurFeatures featuresData={data} />
       <AboutUs aboutUsData={data}/>
       <OurServices businessVerticals={data.businessVerticals} />
-      <FunFacts />
-      <OurPartners />
-      <OurClients />
-      <ContactComponent />
+      <FunFacts companyData={data.companyFacts} />
+      <OurPartners partners={data.partners?.partners} />
+      <OurClients clients={data.clients?.clients} />
+      <ContactComponent contactInformation={data.contact} />
       <TeamSlider />
       <div className='pb-100'>
         <OffersArea />

@@ -17,7 +17,7 @@ const OurServices = ({businessVerticals}) => {
             let result = null;
             if (index === 2 || index === 3 || index === 4) {
               result = (
-                <div className='col-lg-4 col-sm-6'>
+                <div key={service.id} className='col-lg-4 col-sm-6'>
                   <div className='single-choose'>
                     <span className={`flaticon-${service?.icon}`}></span>
                     <h3>{service.serviceName}</h3>
@@ -33,7 +33,7 @@ const OurServices = ({businessVerticals}) => {
               );
             } else {
               result = (
-                <div className='col-lg-6 col-sm-8'>
+                <div key={service.id} className='col-lg-6 col-sm-8'>
                   <div className='single-choose'>
                     <span className={`flaticon-${service?.icon}`}></span>
                     <h3>{service.serviceName}</h3>

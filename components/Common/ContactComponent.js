@@ -1,7 +1,11 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
+import propTypes from 'prop-types';
 import Link from 'next/link';
 
-export default class ContactComponent extends Component {
+export default class ContactComponent extends PureComponent {
+  props = {
+    contactInformation: propTypes.object.isRequired,
+  };
   // Tab
   openTabSection = (evt, tabNmae) => {
     let i, tabcontent, tablinks;
@@ -21,6 +25,7 @@ export default class ContactComponent extends Component {
     evt.currentTarget.className += 'current';
   };
   render() {
+    const {contactInformation} = this.props;
     return (
       <div className='get-quat-area get-quat-area-three ptb-100'>
         <div className='container'>
@@ -35,17 +40,17 @@ export default class ContactComponent extends Component {
                   <li>
                     <i className='flaticon-maps-and-flags'></i>
                     <h3>Head Office Address</h3>
-                    <p>Office No 83, 8th Floor, Super Plaza Building, Azaiba, Sultanate of Oman</p>
+                    <p>{contactInformation.officeAddress}</p>
                   </li>
                   <li>
                     <i className='flaticon-call'></i>
                     <h3>Phone</h3>
-                    <p>+968 2412 1845</p>
+                    <p>{contactInformation.phoneNumber}</p>
                   </li>
                   <li>
                     <i className='flaticon-email'></i>
                     <h3>Email Us For Information</h3>
-                    <p>contact@bposllc.com</p>
+                    <p>{contactInformation.email}</p>
                   </li>
                 </ul>
               </div>

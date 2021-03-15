@@ -1,6 +1,8 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -17,7 +19,7 @@ const options = {
   navText: ["<i class='flaticon-back'></i>", "<i class='flaticon-right'></i>"],
 };
 
-const MainBannerSlider = () => {
+const MainBannerSlider = ({bannerData}) => {
   const [display, setDisplay] = React.useState(false);
 
   React.useEffect(() => {
@@ -33,11 +35,8 @@ const MainBannerSlider = () => {
                 <div className='container'>
                   <div className='slider-text one'>
                     <span>BPOS Global</span>
-                    <h1>We Build long lasting Partnerships</h1>
-                    <p>
-                      Committed to achieve excellence by providing unparalleled solutions and value creation to our clients and partners
-                    </p>
-
+                    <h1>{bannerData?.bannerHeaderOne}</h1>
+                    <p>{bannerData?.bannerDescriptionOne}</p>
                     <div className='slider-btn'>
                       <Link href='/contact'>
                         <a className='default-btn'>Contact Us</a>
@@ -55,12 +54,8 @@ const MainBannerSlider = () => {
                 <div className='container'>
                   <div className='slider-text two'>
                     <span>Global Services</span>
-                    <h1>Global Process Outsourcing Services LLC</h1>
-                    <p>
-                      Be innovative to develop customer centric solutions by maintaining the highest standards of professionalism and
-                      quality of service.
-                    </p>
-
+                    <h1>{bannerData?.bannerHeaderTwo}</h1>
+                    <p>{bannerData?.bannerDescriptionTwo}</p>
                     <div className='slider-btn'>
                       <Link href='/contact'>
                         <a className='default-btn'>About Us</a>
@@ -78,12 +73,8 @@ const MainBannerSlider = () => {
                 <div className='container'>
                   <div className='slider-text two'>
                     <span>Our Services</span>
-                    <h1>Our Services span over several domains</h1>
-                    <p>
-                      Services to Banks, Government & Private Sector (Local & International), Focus on services related to non-core
-                      activities of our clients and End-2-End services covering processes, technology and people
-                    </p>
-
+                    <h1>{bannerData?.bannerHeaderThree}</h1>
+                    <p>{bannerData?.bannerDescriptionThree}</p>
                     <div className='slider-btn'>
                       <Link href='/contact'>
                         <a className='default-btn'>Services</a>
@@ -100,6 +91,10 @@ const MainBannerSlider = () => {
       )}
     </div>
   );
+};
+
+MainBannerSlider.propTypes = {
+  bannerData: propTypes.object.isRequired,
 };
 
 export default MainBannerSlider;

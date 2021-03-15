@@ -2653,6 +2653,9 @@ Choose Us Area Three
     &:hover {
       background-color: $heading-color;
     }
+    p {
+      min-height: 162px;
+    }
   }
 }
 
@@ -2690,6 +2693,7 @@ Services Area Three
     }
     p {
       color: $white-color;
+      min-height: 162px;
     }
     &:hover {
       background-color: $heading-color;

@@ -5,7 +5,7 @@ export default class APIHelper {
       data: axiosResponse?.data,
       status: axiosResponse?.status,
       statusText: axiosResponse?.statusText,
-      totalItems: axiosResponse?.totalItems || axiosResponse?.data?.totalItems || axiosResponse?.data.length,
+      totalItems: axiosResponse?.totalItems || axiosResponse?.data?.totalItems || axiosResponse?.data.length || null,
       request: {
         headers: axiosResponse?.config?.headers,
         method: axiosResponse?.config?.method,

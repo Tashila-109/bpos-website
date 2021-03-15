@@ -1,4 +1,6 @@
 import React from 'react';
+import propTypes from 'prop-types';
+
 import Navbar from '../components/_App/Navbar';
 import MainBannerSlider from '../components/HomeThree/MainBannerSlider';
 import OurFeatures from '../components/HomeThree/OurFeatures';
@@ -12,12 +14,14 @@ import OurPartners from '../components/HomeThree/OurPartners';
 import OurClients from '../components/Common/OurClients';
 import Footer from '../components/_App/Footer';
 
-const Index = () => {
+import {GetHomePageData} from '../api/HomePageApi';
+
+const Index = ({data}) => {
   return (
     <React.Fragment>
       <Navbar />
-      <MainBannerSlider />
-      <OurFeatures />
+      <MainBannerSlider bannerData={data} />
+      <OurFeatures featuresData={data} />
       <AboutUs />
       <OurServices />
       <FunFacts />
@@ -31,6 +35,21 @@ const Index = () => {
       <Footer />
     </React.Fragment>
   );
+};
+
+Index.propTypes = {
+  data: propTypes.object.isRequired,
+};
+
+export const getStaticProps = async () => {
+  const {data} = await GetHomePageData();
+
+  return {
+    props: {
+      data,
+    },
+    revalidate: 1,
+  };
 };
 
 export default Index;

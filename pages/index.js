@@ -27,7 +27,7 @@ const Index = ({data}) => {
       <FunFacts companyData={data.companyFacts} />
       <OurPartners partners={data.partners?.partners} />
       <OurClients clients={data.clients?.clients} />
-      <ContactComponent contactInformation={data.contact} />
+      <ContactComponent contactInformation={data?.contact} />
       <TeamSlider />
       <div className='pb-100'>
         <OffersArea />

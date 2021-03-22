@@ -29,3 +29,13 @@ export const GetShareholdersPageData = () => {
 
   return BposApiAxiosInstance.request(config);
 };
+
+// Get Products and Services Page Data
+export const GetServicesPageData = () => {
+  const config = {
+    url: '/products-and-services-page',
+    method: 'get',
+  };
+
+  return BposApiAxiosInstance.request(config);
+};

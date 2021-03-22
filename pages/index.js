@@ -14,7 +14,7 @@ import OurPartners from '../components/HomeThree/OurPartners';
 import OurClients from '../components/Common/OurClients';
 import Footer from '../components/_App/Footer';
 
-import {GetHomePageData} from '../api/HomePageApi';
+import {GetHomePageData} from '../api/PagesApi';
 
 const Index = ({data}) => {
   return (

@@ -9,3 +9,13 @@ export const GetHomePageData = () => {
 
   return BposApiAxiosInstance.request(config);
 };
+
+// Get About Us Page Data
+export const GetAboutPageData = () => {
+  const config = {
+    url: '/about-us-page',
+    method: 'get',
+  };
+
+    return BposApiAxiosInstance.request(config);
+};

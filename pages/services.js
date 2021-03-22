@@ -16,7 +16,6 @@ const Services = () => {
       <OurServices />
       <ServiceDetails />
       <ContactComponent />
-      <OurVision />
       <Footer />
     </React.Fragment>
   );

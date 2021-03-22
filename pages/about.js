@@ -1,4 +1,6 @@
 import React from 'react';
+import propTypes from 'prop-types';
+
 import NavbarTwo from '../components/_App/NavbarTwo';
 import PageBanner from '../components/Common/PageBanner';
 import AboutUsContent from '../components/About/AboutUsContent';
@@ -9,12 +11,14 @@ import ProcessContent from '../components/About/ProcessContent';
 import AssetContent from '../components/About/AssetContent';
 import Footer from '../components/_App/Footer';
 
-const About = () => {
+import {GetAboutPageData} from '../api/PagesApi';
+
+const About = ({data}) => {
   return (
     <React.Fragment>
       <NavbarTwo />
       <PageBanner pageTitle='About Us' homePageUrl='/' homePageText='Home' activePageText='About Us' />
-      <AboutUsContent />
+      <AboutUsContent aboutUsData={data} />
       <OurMission />
       <OurVision />
       <AboutUsContentTwo />
@@ -27,6 +31,21 @@ const About = () => {
       <Footer />
     </React.Fragment>
   );
+};
+
+About.propTypes = {
+  data: propTypes.object.isRequired,
+};
+
+export const getStaticProps = async () => {
+  const {data} = await GetAboutPageData();
+
+  return {
+    props: {
+      data,
+    },
+    revalidate: 1,
+  };
 };
 
 export default About;

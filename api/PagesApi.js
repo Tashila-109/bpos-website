@@ -17,5 +17,15 @@ export const GetAboutPageData = () => {
     method: 'get',
   };
 
-    return BposApiAxiosInstance.request(config);
+  return BposApiAxiosInstance.request(config);
+};
+
+// Get Shareholders Page Data
+export const GetShareholdersPageData = () => {
+  const config = {
+    url: '/our-shareholders',
+    method: 'get',
+  };
+
+  return BposApiAxiosInstance.request(config);
 };

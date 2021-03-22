@@ -6,7 +6,7 @@ import PageBanner from '../components/Common/PageBanner';
 import AboutUsContent from '../components/About/AboutUsContent';
 import OurMission from '../components/About/OurMission';
 import OurVision from '../components/About/OurVision';
-import AboutUsContentTwo from '../components/About/AboutUsContentTwo';
+import CoreValues from '../components/About/CoreValues';
 import ProcessContent from '../components/About/ProcessContent';
 import AssetContent from '../components/About/AssetContent';
 import Footer from '../components/_App/Footer';
@@ -19,14 +19,14 @@ const About = ({data}) => {
       <NavbarTwo />
       <PageBanner pageTitle='About Us' homePageUrl='/' homePageText='Home' activePageText='About Us' />
       <AboutUsContent aboutUsData={data} />
-      <OurMission />
-      <OurVision />
-      <AboutUsContentTwo />
+      <OurMission missionData={data} />
+      <OurVision visionData={data} />
+      <CoreValues coreValuesData={data} />
       <div className='pt-100'>
-        <ProcessContent />
+        <ProcessContent processData={data} />
       </div>
       <div className='pt-100'>
-        <AssetContent />
+        <AssetContent assetData={data} />
       </div>
       <Footer />
     </React.Fragment>

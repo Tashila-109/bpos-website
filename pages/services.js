@@ -10,14 +10,13 @@ import Footer from '../components/_App/Footer';
 
 import {GetServicesPageData} from '../api/PagesApi';
 
-
 const Services = ({data}) => {
   return (
     <React.Fragment>
       <NavbarTwo />
       <PageBanner pageTitle='Products & Services' homePageUrl='/' homePageText='Home' activePageText='Products & Services' />
       <OurServices servicesData={data} />
-      <ServiceDetails />
+      <ServiceDetails detailsData={data} />
       <ContactComponent />
       <Footer />
     </React.Fragment>

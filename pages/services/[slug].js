@@ -10,7 +10,7 @@ import QuestionForm from '../../components/Services/QuestionsForm';
 
 import {GetServicesData, GetServiceBySlug} from '../../api/ServicesApi';
 
-const Service = ({service, serviceData}) => {
+const Service = ({service, servicesData}) => {
   return (
     <React.Fragment>
       <NavbarTwo />
@@ -20,7 +20,7 @@ const Service = ({service, serviceData}) => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-4'>
-              <ServicesSidebar />
+              <ServicesSidebar servicesData={servicesData} />
             </div>
 
             <div className='col-lg-8'>

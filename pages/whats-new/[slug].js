@@ -6,6 +6,7 @@ import PageBanner from '../../components/Common/PageBanner';
 import Footer from '../../components/_App/Footer';
 import ArticleBody from '../../components/WhatsNew/ArticleBody';
 import ArticleSidebar from '../../components/WhatsNew/ArticleSideBar';
+
 import {GetWhatsNewData, GetArticleBySlug} from '../../api/WhatsNewApi';
 
 const WhatsNewArticle = ({article, articlesData}) => {

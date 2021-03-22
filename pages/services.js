@@ -16,7 +16,7 @@ const Services = ({data}) => {
     <React.Fragment>
       <NavbarTwo />
       <PageBanner pageTitle='Products & Services' homePageUrl='/' homePageText='Home' activePageText='Products & Services' />
-      <OurServices servicesData={data?.products_services} />
+      <OurServices servicesData={data} />
       <ServiceDetails />
       <ContactComponent />
       <Footer />

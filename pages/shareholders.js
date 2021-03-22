@@ -8,7 +8,7 @@ import Footer from '../components/_App/Footer';
 
 import {GetShareholdersPageData} from '../api/PagesApi';
 
-const ShareHolders = () => {
+const ShareHolders = ({data}) => {
   return (
     <React.Fragment>
       <NavbarTwo />

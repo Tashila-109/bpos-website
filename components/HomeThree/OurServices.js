@@ -20,10 +20,10 @@ const OurServices = ({businessVerticals}) => {
                 <div key={service.id} className='col-lg-4 col-sm-6'>
                   <div className='single-choose'>
                     <span className={`flaticon-${service?.icon}`}></span>
-                    <h3>{service.serviceName}</h3>
-                    <p>{service.serviceDescription}</p>
+                    <h3>{service.pageHeader}</h3>
+                    <p>{service.serviceShortDescription}</p>
 
-                    <Link href={`/services/${service.serviceUrl}`}>
+                    <Link href={`/services/${service.slug}`}>
                       <a>
                         <i className='flaticon-right'></i>
                       </a>
@@ -36,10 +36,10 @@ const OurServices = ({businessVerticals}) => {
                 <div key={service.id} className='col-lg-6 col-sm-8'>
                   <div className='single-choose'>
                     <span className={`flaticon-${service?.icon}`}></span>
-                    <h3>{service.serviceName}</h3>
-                    <p>{service.serviceDescription}</p>
+                    <h3>{service.pageHeader}</h3>
+                    <p>{service.serviceShortDescription}</p>
 
-                    <Link href={`/services/${service.serviceUrl}`}>
+                    <Link href={`/services/${service.slug}`}>
                       <a>
                         <i className='flaticon-right'></i>
                       </a>

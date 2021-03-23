@@ -1,39 +1,18 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
-const ServicesSidebar = () => {
+const ServicesSidebar = ({servicesData}) => {
   return (
     <div className='service-sidebar-area'>
       <div className='service-list service-card'>
         <h3 className='service-details-title'>Services</h3>
         <ul>
-          <li>
-            ICT
-            <i className='bx bx-check'></i>
-          </li>
-          <li>
-            Cyber Security
-            <i className='bx bx-check'></i>
-          </li>
-          <li>
-            Agency Representation
-            <i className='bx bx-check'></i>
-          </li>
-          <li>
-            Event Management
-            <i className='bx bx-check'></i>
-          </li>
-          <li>
-            Delivery Channels
-            <i className='bx bx-check'></i>
-          </li>
-          <li>
-            Non Core Support Services
-            <i className='bx bx-check'></i>
-          </li>
-          <li>
-            Trading
-            <i className='bx bx-check'></i>
-          </li>
+          {servicesData?.map(service => (
+            <li key={service.id}>
+              {service?.pageHeader}
+              <i className='bx bx-check'></i>
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -90,6 +69,10 @@ const ServicesSidebar = () => {
             </div> */}
     </div>
   );
+};
+
+ServicesSidebar.propTypes = {
+  servicesData: propTypes.array.isRequired,
 };
 
 export default ServicesSidebar;

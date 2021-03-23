@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactWOW from 'react-wow';
+import propTypes from 'prop-types';
 
-const AboutUsContent = () => {
+const AboutUsContent = ({aboutUsData}) => {
   return (
     <div className='about-area ptb-100'>
       <div className='container'>
@@ -9,27 +10,15 @@ const AboutUsContent = () => {
           <div className='col-lg-6'>
             <div className='about-content'>
               <span>About Us</span>
-              <h2>Welcome to BPOS Global</h2>
-
-              <p>
-                <b>Business Process Outsourcing Services LLC (BPOS Global) </b> is a company set up in Oman and Sri Lanka with the objective
-                of providing services and solutions to BFSI as well as Public and Private Sector Establishments in Sri Lanka and the
-                Sultanate of Oman. The Company brings together competent people, processes and technologies from diverse backgrounds in
-                order to provide expertise in Strategy Planning, Processes, ICT, Financial Services, Trading and Real Estate.
-              </p>
-
-              <p>
-                With International strategic partners and a progressive company culture that emphasizes and nurtures innovation and
-                creativity, BPOS delivers unique solutions that bring value to its customers and partners, which help make life easier, more
-                productive and more enjoyable.
-              </p>
+              <h2>{aboutUsData?.aboutUsHeader}</h2>
+              <p>{aboutUsData?.aboutUsDescription}</p>
             </div>
           </div>
 
           <div className='col-lg-6'>
             <ReactWOW animation='fadeInRight' delay='0.1s'>
               <div className='about-img'>
-                <img src='/images/about-img.jpg' alt='about-image' />
+                <img src={`${process.env.API_URL}${aboutUsData?.aboutUsImage.url}`} alt='about-image' />
               </div>
             </ReactWOW>
           </div>
@@ -37,6 +26,10 @@ const AboutUsContent = () => {
       </div>
     </div>
   );
+};
+
+AboutUsContent.propTypes = {
+  aboutUsData: propTypes.object.isRequired,
 };
 
 export default AboutUsContent;

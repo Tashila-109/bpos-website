@@ -1,11 +1,13 @@
 import React from 'react';
+import propTypes from 'prop-types';
+
 import NavbarTwo from '../components/_App/NavbarTwo';
 import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
 
-import {Clients} from '../constants/Clients';
+import {GetClientsPageData} from '../api/PagesApi';
 
-const ClientsComponent = () => {
+const ClientsComponent = ({data}) => {
   return (
     <React.Fragment>
       <NavbarTwo />
@@ -14,19 +16,15 @@ const ClientsComponent = () => {
       <div className='team-section ptb-100'>
         <div className='container'>
           <div className='section-title'>
-            <h2>Our Clients</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida.
-            </p>
+            <h2>{data?.clientsHeader}</h2>
+            <p>{data?.clientsDescription}</p>
           </div>
-
           <div className='row'>
-            {Clients.map((value, index) => (
-              <div className='col-lg-4 col-md-6 col-sm-6'>
+            {data.client?.clients?.map(value => (
+              <div key={`${value.id}-client`} className='col-lg-4 col-md-6 col-sm-6'>
                 <div className='single-team'>
                   <div className='image'>
-                    <img src={`/images/testimonials/client${index + 1}.jpg`} alt={`client-${index + 1}`} />
+                    <img src={`${process.env.API_URL}${value?.image.url}`} alt={`client-${value.id}-image`} />
                   </div>
                 </div>
               </div>
@@ -38,6 +36,21 @@ const ClientsComponent = () => {
       <Footer />
     </React.Fragment>
   );
+};
+
+ClientsComponent.propTypes = {
+  data: propTypes.object.isRequired,
+};
+
+export const getStaticProps = async () => {
+  const {data} = await GetClientsPageData();
+
+  return {
+    props: {
+      data,
+    },
+    revalidate: 1,
+  };
 };
 
 export default ClientsComponent;

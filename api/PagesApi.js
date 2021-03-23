@@ -39,3 +39,22 @@ export const GetServicesPageData = () => {
 
   return BposApiAxiosInstance.request(config);
 };
+
+// Get Clients Page Data
+export const GetClientsPageData = () => {
+  const config = {
+    url: '/clients-page',
+    method: 'get',
+  };
+
+  return BposApiAxiosInstance.request(config);
+};
+
+export const GetPartnersPageData = () => {
+  const config = {
+    url: '/partners-page',
+    method: 'get',
+  };
+
+  return BposApiAxiosInstance.request(config);
+};

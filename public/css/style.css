@@ -1335,6 +1335,7 @@ About Area Style
 }
 
 .about-area .about-content .about-list ul {
+  list-style: disc outside none !important;
   overflow: hidden;
 }
 

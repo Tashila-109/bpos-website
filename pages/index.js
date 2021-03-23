@@ -14,7 +14,7 @@ import OurPartners from '../components/HomeThree/OurPartners';
 import OurClients from '../components/Common/OurClients';
 import Footer from '../components/_App/Footer';
 
-import {GetHomePageData} from '../api/HomePageApi';
+import {GetHomePageData} from '../api/PagesApi';
 
 const Index = ({data}) => {
   return (
@@ -23,7 +23,7 @@ const Index = ({data}) => {
       <MainBannerSlider bannerData={data} />
       <OurFeatures featuresData={data} />
       <AboutUs aboutUsData={data}/>
-      <OurServices businessVerticals={data.businessVerticals} />
+      <OurServices businessVerticals={data?.services} />
       <FunFacts companyData={data.companyFacts} />
       <OurPartners partners={data.partners?.partners} />
       <OurClients clients={data.clients?.clients} />

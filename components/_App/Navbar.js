@@ -105,7 +105,7 @@ const Navbar = () => {
 
                       <ul className='dropdown-menu'>
                         <li className='nav-item'>
-                          <Link href='/services/it-services' activeClassName='active'>
+                          <Link href='/services/ict-products-and-services' activeClassName='active'>
                             <a onClick={toggleNavbar} className='nav-link'>
                               ICT
                             </a>
@@ -113,7 +113,7 @@ const Navbar = () => {
                         </li>
 
                         <li className='nav-item'>
-                          <Link href='/services/cybersecurity' activeClassName='active'>
+                          <Link href='/services/cyber-security' activeClassName='active'>
                             <a onClick={toggleNavbar} className='nav-link'>
                               Cyber Security
                             </a>
@@ -148,7 +148,7 @@ const Navbar = () => {
                           </Link>
                         </li>
                         <li className='nav-item'>
-                          <Link href='/services/support-services' activeClassName='active'>
+                          <Link href='/services/non-core-support-services' activeClassName='active'>
                             <a onClick={toggleNavbar} className='nav-link'>
                               Support Services
                             </a>

@@ -1201,6 +1201,9 @@ About Area Style
       position: relative;
       display: block;
     }
+    ul {
+      list-style: disc outside none !important;
+    }
     .about-list {
       margin-top: 15px;
       ul {

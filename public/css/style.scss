@@ -3364,7 +3364,10 @@ Blog Details Area Style
   .blog-details-desc {
     .article-image {
       position: relative;
-      background-color: $heading-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 600px;
     }
     .article-content {
       margin-top: 30px;

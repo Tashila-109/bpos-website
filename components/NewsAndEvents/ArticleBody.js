@@ -7,11 +7,12 @@ import {articleDateFormat} from '../../helpers/dateHelper';
 
 const ArticleBody = ({article}) => {
   return (
-    <div className='col-lg-8 col-md-12'>
+    <div className='col-lg-12 col-md-12'>
       <div className='blog-details-desc'>
         <div className='article-image'>
           <Image
             layout='fill'
+            objectFit='cover'
             src={`${process.env.API_URL}${article?.bannerImage?.url}`}
             alt={`Image-${article?.articleName}`}
           />

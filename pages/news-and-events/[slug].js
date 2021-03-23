@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 import NavbarTwo from '../../components/_App/NavbarTwo';
 import PageBanner from '../../components/Common/PageBanner';
 import Footer from '../../components/_App/Footer';
-import ArticleBody from '../../components/WhatsNew/ArticleBody';
+import ArticleBody from '../../components/NewsAndEvents/ArticleBody';
 import ArticleSidebar from '../../components/WhatsNew/ArticleSideBar';
 
 import {GetNewsAndEventsData, GetNewsAndEventBySlug} from '../../api/NewsAndEventsApi';
@@ -26,11 +26,11 @@ const NewsAndEvents = ({article, articlesData}) => {
         <div className='container'>
           <div className='row'>
             <ArticleBody article={article} />
-            <div className='col-lg-4 col-md-12'>
-              {/* <div className='blog-right-sidebar'>
+            {/* <div className='col-lg-4 col-md-12'>
+              <div className='blog-right-sidebar'>
                 <ArticleSidebar selectedArticle={article} articlesData={articlesData} />
-              </div> */}
-            </div>
+              </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -69,4 +69,4 @@ export const getStaticProps = async ({params}) => {
   };
 };
 
-export default WhatsNewArticle;
+export default NewsAndEvents;

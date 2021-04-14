@@ -4782,6 +4782,12 @@ Team Area Style
   }
 }
 
+.serviceItem{
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 /*
 Blog Area Two Columns
 =================================================*/

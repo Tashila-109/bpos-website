@@ -321,16 +321,16 @@ const Navbar = () => {
 
                   <ul className='social-list'>
                     <li>
-                      <a href='#' target='_blank'>
-                        <i className='bx bxl-twitter'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#' target='_blank'>
+                      <a href='https://www.facebook.com/Business-Process-Outsourcing-Services-LLC-161123257332759/' target='_blank'>
                         <i className='bx bxl-facebook'></i>
                       </a>
                     </li>
                     <li>
+                      <a href='https://twitter.com/BPOSLLC' target='_blank'>
+                        <i className='bx bxl-twitter'></i>
+                      </a>
+                    </li>
+                    {/* <li>
                       <a href='#' target='_blank'>
                         <i className='bx bxl-instagram'></i>
                       </a>
@@ -344,7 +344,7 @@ const Navbar = () => {
                       <a href='#' target='_blank'>
                         <i className='bx bxl-youtube'></i>
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

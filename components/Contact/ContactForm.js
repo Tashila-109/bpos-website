@@ -13,45 +13,31 @@ const ContactForm = ({ contactData }) => {
                   <h2>{contactData?.contactFormHeader}</h2>
                 </div>
 
-                <form id='contact' name='contact' method='post' data-netlify='true' netlify-honeypot='bot-field' action="/success">
+                <form name='contact' method='POST' data-netlify='true' netlify-honeypot='bot-field' action='/success' netlify>
                   <input type='hidden' name='bot-field' />
                   <input type='hidden' name='form-name' value='contact' />
                   <div className='row'>
                     <div className='col-lg-6 col-sm-6'>
                       <div className='form-group'>
-                        <input type='text' name='name' id='name' className='form-control' required placeholder='Your Name' />
+                        <input type='text' name='name' className='form-control' required placeholder='Your Name' />
                       </div>
                     </div>
 
                     <div className='col-lg-6 col-sm-6'>
                       <div className='form-group'>
-                        <input type='email' name='email' id='email' className='form-control' required placeholder='Your Email' />
+                        <input type='email' name='email'className='form-control' required placeholder='Your Email' />
                       </div>
                     </div>
 
                     <div className='col-lg-6 col-sm-6'>
                       <div className='form-group'>
-                        <input
-                          type='text'
-                          name='number'
-                          id='number'
-                          required
-                          className='form-control'
-                          placeholder='Your Phone'
-                        />
+                        <input type='text' name='number' required className='form-control' placeholder='Your Phone' />
                       </div>
                     </div>
 
                     <div className='col-lg-6 col-sm-6'>
                       <div className='form-group'>
-                        <input
-                          type='text'
-                          name='subject'
-                          id='subject'
-                          className='form-control'
-                          required
-                          placeholder='Your Subject'
-                        />
+                        <input type='text' name='subject' className='form-control' required placeholder='Your Subject' />
                       </div>
                     </div>
 
@@ -60,7 +46,6 @@ const ContactForm = ({ contactData }) => {
                         <textarea
                           name='message'
                           className='form-control'
-                          id='message'
                           cols='30'
                           rows='5'
                           required

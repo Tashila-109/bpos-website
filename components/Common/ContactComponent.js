@@ -1,4 +1,4 @@
-import React, {PureComponent} from 'react';
+import React, { PureComponent } from 'react';
 import propTypes from 'prop-types';
 import Link from 'next/link';
 
@@ -25,7 +25,7 @@ export default class ContactComponent extends PureComponent {
     evt.currentTarget.className += 'current';
   };
   render() {
-    const {contactInformation} = this.props;
+    const { contactInformation } = this.props;
     return (
       <div className='get-quat-area get-quat-area-three ptb-100'>
         <div className='container'>
@@ -67,34 +67,38 @@ export default class ContactComponent extends PureComponent {
 
                   <div className='tab_content'>
                     <div id='tab1' className='tabs_item'>
-                      <div className='form'>
-                        <div className='form-group'>
-                          <input type='text' className='form-control' id='Name' placeholder='Your Name' />
-                        </div>
+                      <form id='contactForm' name='contact-form' method='post' data-netlify='true' netlify-honeypot='bot-field'>
+                        <input type='hidden' name='bot-field' />
+                        <input type='hidden' name='form-name' value='contact-form' />
+                        <div className='form'>
+                          <div className='form-group'>
+                            <input type='text' className='form-control' id='Name' placeholder='Your Name' />
+                          </div>
 
-                        <div className='form-group'>
-                          <input type='email' className='form-control' id='Email' placeholder='Your Email' />
-                        </div>
+                          <div className='form-group'>
+                            <input type='email' className='form-control' id='Email' placeholder='Your Email' />
+                          </div>
 
-                        <div className='form-group'>
-                          <input type='text' className='form-control' id='Number' placeholder='Your Number' />
-                        </div>
+                          <div className='form-group'>
+                            <input type='text' className='form-control' id='Number' placeholder='Your Number' />
+                          </div>
 
-                        <div className='form-group'>
-                          <textarea
-                            name='message'
-                            className='form-control'
-                            cols='30'
-                            rows='6'
-                            required
-                            placeholder='Write your message...'
-                          />
-                        </div>
+                          <div className='form-group'>
+                            <textarea
+                              name='message'
+                              className='form-control'
+                              cols='30'
+                              rows='6'
+                              required
+                              placeholder='Write your message...'
+                            />
+                          </div>
 
-                        <button type='submit' className='default-btn'>
-                          Send Message
-                        </button>
-                      </div>
+                          <button type='submit' className='default-btn'>
+                            Send Message
+                          </button>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>

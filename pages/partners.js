@@ -1,13 +1,14 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import Link from 'next/link';
 
 import NavbarTwo from '../components/_App/NavbarTwo';
 import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
 
-import {GetPartnersPageData} from '../api/PagesApi';
+import { GetPartnersPageData } from '../api/PagesApi';
 
-const PartnersComponent = ({data}) => {
+const PartnersComponent = ({ data }) => {
   return (
     <React.Fragment>
       <NavbarTwo />
@@ -23,11 +24,13 @@ const PartnersComponent = ({data}) => {
           <div className='row'>
             {data.partner?.partners?.map((value, index) => (
               <div key={value.id} className='col-lg-4 col-md-6 col-sm-6'>
-                <div className='single-team'>
-                  <div className='image'>
-                    <img src={`${process.env.API_URL}${value?.image.url}`} alt={`partner-${value.id}-image`} />
+                <Link href={value.url ? value.url : '#'}>
+                  <div className='single-team'>
+                    <div className='image'>
+                      <img src={`${process.env.API_URL}${value?.image.url}`} alt={`partner-${value.id}-image`} />
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
@@ -44,7 +47,7 @@ PartnersComponent.propTypes = {
 };
 
 export const getStaticProps = async () => {
-  const {data} = await GetPartnersPageData();
+  const { data } = await GetPartnersPageData();
 
   return {
     props: {

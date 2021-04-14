@@ -1,13 +1,14 @@
 import React from 'react';
 import propTypes from 'prop-types';
+import Link from 'next/link';
 
 import NavbarTwo from '../components/_App/NavbarTwo';
 import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
 
-import {GetClientsPageData} from '../api/PagesApi';
+import { GetClientsPageData } from '../api/PagesApi';
 
-const ClientsComponent = ({data}) => {
+const ClientsComponent = ({ data }) => {
   return (
     <React.Fragment>
       <NavbarTwo />
@@ -22,11 +23,13 @@ const ClientsComponent = ({data}) => {
           <div className='row'>
             {data.client?.clients?.map(value => (
               <div key={`${value.id}-client`} className='col-lg-4 col-md-6 col-sm-6'>
-                <div className='single-team'>
-                  <div className='image'>
-                    <img src={`${process.env.API_URL}${value?.image.url}`} alt={`client-${value.id}-image`} />
+                <Link href={value.url ? value.url : '#'}>
+                  <div className='single-team'>
+                    <div className='image'>
+                      <img src={`${process.env.API_URL}${value?.image.url}`} alt={`client-${value.id}-image`} />
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
@@ -43,7 +46,7 @@ ClientsComponent.propTypes = {
 };
 
 export const getStaticProps = async () => {
-  const {data} = await GetClientsPageData();
+  const { data } = await GetClientsPageData();
 
   return {
     props: {

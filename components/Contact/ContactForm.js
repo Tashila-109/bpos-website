@@ -13,9 +13,9 @@ const ContactForm = ({ contactData }) => {
                   <h2>{contactData?.contactFormHeader}</h2>
                 </div>
 
-                <form id='contactForm' name='contactFormOne' method='post' data-netlify='true' netlify-honeypot='bot-field'>
+                <form id='contact' name='contact' method='post' data-netlify='true' netlify-honeypot='bot-field' action="/success">
                   <input type='hidden' name='bot-field' />
-                  <input type='hidden' name='form-name' value='contactFormOne' />
+                  <input type='hidden' name='form-name' value='contact' />
                   <div className='row'>
                     <div className='col-lg-6 col-sm-6'>
                       <div className='form-group'>
@@ -33,8 +33,8 @@ const ContactForm = ({ contactData }) => {
                       <div className='form-group'>
                         <input
                           type='text'
-                          name='phone_number'
-                          id='phone_number'
+                          name='number'
+                          id='number'
                           required
                           className='form-control'
                           placeholder='Your Phone'
@@ -46,8 +46,8 @@ const ContactForm = ({ contactData }) => {
                       <div className='form-group'>
                         <input
                           type='text'
-                          name='msg_subject'
-                          id='msg_subject'
+                          name='subject'
+                          id='subject'
                           className='form-control'
                           required
                           placeholder='Your Subject'

@@ -25,16 +25,16 @@ const Footer = () => {
                 <div className='social-area'>
                   <ul>
                     <li>
-                      <a href='#' target='_blank'>
+                      <a href='https://www.facebook.com/Business-Process-Outsourcing-Services-LLC-161123257332759/' target='_blank'>
                         <i className='bx bxl-facebook'></i>
                       </a>
                     </li>
                     <li>
-                      <a href='#' target='_blank'>
+                      <a href='https://twitter.com/BPOSLLC' target='_blank'>
                         <i className='bx bxl-twitter'></i>
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href='#' target='_blank'>
                         <i className='bx bxl-linkedin'></i>
                       </a>
@@ -48,7 +48,7 @@ const Footer = () => {
                       <a href='#' target='_blank'>
                         <i className='bx bxl-instagram'></i>
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

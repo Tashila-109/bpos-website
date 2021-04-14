@@ -4769,6 +4769,7 @@ Team Area Style
     }
   }
   &:hover {
+    cursor: pointer;
     .image {
       .social {
         li {
@@ -4778,6 +4779,12 @@ Team Area Style
         }
       }
     }
+  }
+}
+
+.serviceItem{
+  &:hover {
+    cursor: pointer;
   }
 }
 

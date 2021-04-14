@@ -1,6 +1,7 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
-const ContactForm = () => {
+const ContactForm = ({contactData}) => {
   return (
     <div className='contact-area ptb-100'>
       <div className='container'>
@@ -9,7 +10,7 @@ const ContactForm = () => {
             <div className='contact-wrap'>
               <div className='contact-form'>
                 <div className='section-title'>
-                  <h2>Drop Us A Message For Any Query</h2>
+                  <h2>{contactData?.contactFormHeader}</h2>
                 </div>
 
                 <form id='contactForm'>
@@ -84,19 +85,19 @@ const ContactForm = () => {
                 <li>
                   <i className='flaticon-maps-and-flags'></i>
                   Location:
-                  <span>Office No 83, 8th Floor, Super Plaza Building, Azaiba, Sultanate of Oman</span>
+                  <span>{contactData.contactInformation?.officeAddress}</span>
                 </li>
                 <li>
                   <i className='flaticon-call'></i>
                   Call Us:
                   <a href='tel:+96824121845'>
-                    +968 2412 1845 <br /> Fax: +968 2412 1832
+                    {contactData.contactInformation?.phoneNumber} <br /> Fax: {contactData.contactInformation?.faxNumber}
                   </a>
                 </li>
                 <li>
                   <i className='flaticon-email'></i>
                   Email Us:
-                  <a href='mailto:contact@bposllc.com'>contact@bposllc.com</a>
+                  <a href={`mailto:${contactData.contactInformation?.email}}`}>{contactData.contactInformation?.email}</a>
                 </li>
               </ul>
             </div>
@@ -105,6 +106,10 @@ const ContactForm = () => {
       </div>
     </div>
   );
+};
+
+ContactForm.propTypes = {
+  contactData: propTypes.object.isRequired,
 };
 
 export default ContactForm;

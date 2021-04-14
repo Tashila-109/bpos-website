@@ -36,7 +36,7 @@ const NavbarTwo = () => {
     <React.Fragment>
       <header className='header-area fixed-top'>
         {/* TopHeader */}
-        <TopHeader />
+        {/* <TopHeader /> */}
 
         <div id='navbar' className='navbar-area nav-style-two'>
           <div className='main-nav'>
@@ -325,16 +325,16 @@ const NavbarTwo = () => {
 
                   <ul className='social-list'>
                     <li>
-                      <a href='#' target='_blank'>
-                        <i className='bx bxl-twitter'></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href='#' target='_blank'>
+                      <a href='https://www.facebook.com/Business-Process-Outsourcing-Services-LLC-161123257332759/' target='_blank'>
                         <i className='bx bxl-facebook'></i>
                       </a>
                     </li>
                     <li>
+                      <a href='https://twitter.com/BPOSLLC' target='_blank'>
+                        <i className='bx bxl-twitter'></i>
+                      </a>
+                    </li>
+                    {/* <li>
                       <a href='#' target='_blank'>
                         <i className='bx bxl-instagram'></i>
                       </a>
@@ -348,7 +348,7 @@ const NavbarTwo = () => {
                       <a href='#' target='_blank'>
                         <i className='bx bxl-youtube'></i>
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

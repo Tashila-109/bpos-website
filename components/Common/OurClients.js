@@ -5,8 +5,6 @@ import Link from 'next/link';
 
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
-import {Clients} from '../../constants/Clients';
-
 const options = {
   loop: true,
   margin: 30,

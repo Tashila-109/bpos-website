@@ -58,3 +58,13 @@ export const GetPartnersPageData = () => {
 
   return BposApiAxiosInstance.request(config);
 };
+
+// Get Contact Page Data
+export const GetContactPageData = () => {
+  const config = {
+    url: '/contact-page',
+    method: 'get',
+  };
+
+  return BposApiAxiosInstance.request(config);
+};

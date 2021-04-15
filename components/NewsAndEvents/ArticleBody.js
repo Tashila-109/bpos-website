@@ -1,18 +1,16 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import Markdown from 'markdown-to-jsx';
-import Image from 'next/image';
 
-import {articleDateFormat} from '../../helpers/dateHelper';
+import { articleDateFormat } from '../../helpers/dateHelper';
 
-const ArticleBody = ({article}) => {
+const ArticleBody = ({ article }) => {
   return (
     <div className='col-lg-12 col-md-12'>
       <div className='blog-details-desc'>
         <div className='article-image'>
-          <Image
-            layout='fill'
-            objectFit='cover'
+          <img
+            style={{ height: '100%', width: '100%', objectFit: 'cover' }}
             src={`${process.env.API_URL}${article?.bannerImage?.url}`}
             alt={`Image-${article?.articleName}`}
           />

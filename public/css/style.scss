@@ -4694,7 +4694,8 @@ Team Area Style
   margin-bottom: 30px;
   position: relative;
   .image {
-		min-height: 282px;
+		min-height: 350px;
+    max-height: 350px;
     position: relative;
     .social {
       list-style-type: none;

@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import propTypes from 'prop-types';
 
 import {articleDateFormat} from '../../helpers/dateHelper';
@@ -33,7 +32,7 @@ const ArticleSidebar = ({selectedArticle, articlesData}) => {
                   <div key={`popular-posts-${article?.slug}`} className='item'>
                     <Link href={`/whats-new/${article?.slug}`}>
                       <a className='thumb'>
-                        <Image
+                        <img
                           width='100'
                           height='80'
                           src={`${process.env.API_URL}${article?.bannerImage?.url}`}

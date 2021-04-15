@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import propTypes from 'prop-types';
 
 import NavbarTwo from '../../components/_App/NavbarTwo';
@@ -26,7 +25,7 @@ const Service = ({service, servicesData}) => {
             <div className='col-lg-8'>
               <div className='service-details-wrap'>
                 <div className='service-img'>
-                  <Image
+                  <img
                     width='730'
                     height='600'
                     src={`${process.env.API_URL}${service?.serviceImage.url}`}

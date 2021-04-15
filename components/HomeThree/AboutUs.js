@@ -1,7 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const AboutUs = ({aboutUsData}) => {
   return (
@@ -21,7 +20,7 @@ const AboutUs = ({aboutUsData}) => {
 
           <div className='col-lg-6 col-md-6'>
             <div className='about-img-3'>
-              <Image width='530' height='500' src={`${process.env.API_URL}${aboutUsData?.aboutUsImage.url}`} alt='Home-About-us' />
+              <img width='530' height='500' src={`${process.env.API_URL}${aboutUsData?.aboutUsImage.url}`} alt='Home-About-us' />
             </div>
           </div>
         </div>

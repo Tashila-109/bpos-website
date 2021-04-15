@@ -1,11 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import propTypes from 'prop-types';
-import Image from 'next/image';
 
-import {articleDateFormat} from '../../../helpers/dateHelper';
+import { articleDateFormat } from '../../../helpers/dateHelper';
 
-const NewsAndEventsGrid = ({articleData}) => {
+const NewsAndEventsGrid = ({ articleData }) => {
   return (
     <div className='blog-area ptb-100'>
       <div className='container'>
@@ -16,9 +15,8 @@ const NewsAndEventsGrid = ({articleData}) => {
                 <div className='single-blog'>
                   <Link href='/news-and-events/[slug]' as={`/news-and-events/${value?.slug}`}>
                     <a>
-                      <Image
-                        width='570'
-                        height='400'
+                      <img
+                        style={{ minHeight: '290px', minWidth: '350px', maxHeight: '290px', maxWidth: '350px' }}
                         src={`${process.env.API_URL}${value?.bannerImage?.url}`}
                         alt={`Image-${value?.articleName}`}
                       />
@@ -49,7 +47,7 @@ const NewsAndEventsGrid = ({articleData}) => {
               </div>
             ))}
 
-          <div className='col-lg-12'>
+          {/* <div className='col-lg-12'>
             <div className='page-navigation-area'>
               <ul className='pagination'>
                 <li className='page-item'>
@@ -83,7 +81,7 @@ const NewsAndEventsGrid = ({articleData}) => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

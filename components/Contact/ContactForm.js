@@ -84,7 +84,7 @@ const ContactForm = ({ contactData }) => {
                 <li>
                   <i className='flaticon-email'></i>
                   Email Us:
-                  <a href={`mailto:${contactData.contactInformation?.email}}`}>{contactData.contactInformation?.email}</a>
+                  <a href={`mailto:${contactData.contactInformation?.email}`}>{contactData.contactInformation?.email}</a>
                 </li>
               </ul>
             </div>

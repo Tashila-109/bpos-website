@@ -1,6 +1,5 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
 
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
@@ -50,7 +49,7 @@ const TeamSlider = () => {
           <OwlCarousel className='team-wrap owl-carousel owl-theme' {...options}>
             <div className='single-team'>
               <div className='image'>
-                <Image width='530' height='500' src='/images/team/team1.jpg' alt='team-member-1' />
+                <img width='530' height='500' src='/images/team/team1.jpg' alt='team-member-1' />
 
                 <ul className='social'>
                   <li>
@@ -84,7 +83,7 @@ const TeamSlider = () => {
 
             <div className='single-team'>
               <div className='image'>
-                <Image width='530' height='500' src='/images/team/team2.jpg' alt='team-member-2' />
+                <img width='530' height='500' src='/images/team/team2.jpg' alt='team-member-2' />
 
                 <ul className='social'>
                   <li>
@@ -118,7 +117,7 @@ const TeamSlider = () => {
 
             <div className='single-team'>
               <div className='image'>
-                <Image width='530' height='500'  src='/images/team/team3.jpg' alt='team-member-3' />
+                <img width='530' height='500'  src='/images/team/team3.jpg' alt='team-member-3' />
 
                 <ul className='social'>
                   <li>
@@ -152,7 +151,7 @@ const TeamSlider = () => {
 
             <div className='single-team'>
               <div className='image'>
-                <Image width='530' height='500' src='/images/team/team4.jpg' alt='team-member-4' />
+                <img width='530' height='500' src='/images/team/team4.jpg' alt='team-member-4' />
 
                 <ul className='social'>
                   <li>

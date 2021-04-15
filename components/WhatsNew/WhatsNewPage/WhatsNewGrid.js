@@ -1,11 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import propTypes from 'prop-types';
-import Image from 'next/image';
 
-import {articleDateFormat} from '../../../helpers/dateHelper';
+import { articleDateFormat } from '../../../helpers/dateHelper';
 
-const WhatsNewGrid = ({articleData}) => {
+const WhatsNewGrid = ({ articleData }) => {
   return (
     <div className='blog-area ptb-100'>
       <div className='container'>
@@ -16,9 +15,8 @@ const WhatsNewGrid = ({articleData}) => {
                 <div className='single-blog'>
                   <Link href='/whats-new/[slug]' as={`/whats-new/${value?.slug}`}>
                     <a>
-                      <Image
-                        width='570'
-                        height='400'
+                      <img
+                        style={{ minHeight: '270px', minWidth: '350px', maxHeight: '270px', maxWidth: '350px' }}
                         src={`${process.env.API_URL}${value?.bannerImage?.url}`}
                         alt={`Image-${value?.articleName}`}
                       />

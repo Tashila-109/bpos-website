@@ -14,7 +14,7 @@ const MainBanner = () => {
               </ReactWOW>
 
               <ReactWOW animation='fadeInUp' delay='0.2s'>
-                <h1>Our webiste is currently under maintenance.</h1>
+                <h1>Our website is currently under maintenance.</h1>
               </ReactWOW>
 
               <ReactWOW animation='fadeInUp' delay='0.4s'>

@@ -14,4 +14,28 @@ module.exports = {
   },
   // Target must be serverless
   target: 'serverless',
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/maintenance',
+        permanent: true,
+      },
+      {
+        source: '/about',
+        destination: '/maintenance',
+        permanent: true,
+      },
+      {
+        source: '/services',
+        destination: '/maintenance',
+        permanent: true,
+      },
+      {
+        source: '/contact',
+        destination: '/maintenance',
+        permanent: true,
+      },
+    ];
+  },
 };

@@ -4,6 +4,6 @@
   publish   = "out_publish"
 
 [[redirects]]
-  from = "/*"
+  from = "/"
   to = "/maintenance"
   force = true

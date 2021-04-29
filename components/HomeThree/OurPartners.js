@@ -36,7 +36,16 @@ const options = {
   },
 };
 
-const OurPartners = ({partners}) => {
+const renderOverflowBodyText = (bodyText, overflowCharacterLimit) => {
+  let result = bodyText;
+  if (bodyText?.length > overflowCharacterLimit) {
+    result = `${bodyText.substring(0, overflowCharacterLimit)}...`;
+  }
+
+  return result;
+};
+
+const OurPartners = ({ partners }) => {
   const [display, setDisplay] = React.useState(false);
 
   React.useEffect(() => {
@@ -57,11 +66,11 @@ const OurPartners = ({partners}) => {
                 <Link href={value.url ? value.url : '#'}>
                   <div className='client-text'>
                     <img src={`${process.env.API_URL}${value?.image.url}`} alt={`partner-${value.id}`} />
-                    <h3>{value.name}</h3>
+                    <h3>{renderOverflowBodyText(value.name, 20)}</h3>
                     {/* <span>{value.country}</span> */}
                   </div>
                 </Link>
-                <p>{value.description}</p>
+                <p>{renderOverflowBodyText(value.description, 245)}</p>
               </div>
             ))}
           </OwlCarousel>

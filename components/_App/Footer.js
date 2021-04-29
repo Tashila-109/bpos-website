@@ -18,8 +18,10 @@ const Footer = () => {
                 </Link>
 
                 <p>
-                  Services to Banks, Government & Private Sector (Local & International), Focus on services related to non-core activities
-                  of our clients and End-2-End services covering processes, technology and people.
+                  (BPOS Global) is a company set up in Oman with the objective of providing services and solutions to BFSI as well as Public
+                  and Private Sector Establishments in Sri Lanka and the Sultanate of Oman. The Company brings together competent people,
+                  processes and technologies from diverse backgrounds in order to provide expertise in Strategy Planning, Processes, ICT,
+                  Financial Services, Trading and Real Estate.
                 </p>
 
                 <div className='social-area'>

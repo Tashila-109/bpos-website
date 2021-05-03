@@ -46,42 +46,6 @@ const WhatsNewGrid = ({ articleData }) => {
                 </div>
               </div>
             ))}
-
-          <div className='col-lg-12'>
-            <div className='page-navigation-area'>
-              <ul className='pagination'>
-                <li className='page-item'>
-                  <Link href='#'>
-                    <a className='page-link page-links'>
-                      <i className='bx bx-chevrons-left'></i>
-                    </a>
-                  </Link>
-                </li>
-                <li className='page-item active'>
-                  <Link href='#'>
-                    <a className='page-link' href='#'>
-                      1
-                    </a>
-                  </Link>
-                </li>
-                <li className='page-item'>
-                  <a className='page-link' href='#'>
-                    2
-                  </a>
-                </li>
-                <li className='page-item'>
-                  <a className='page-link' href='#'>
-                    3
-                  </a>
-                </li>
-                <li className='page-item'>
-                  <a className='page-link' href='#'>
-                    <i className='bx bx-chevrons-right'></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </div>

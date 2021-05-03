@@ -67,7 +67,14 @@ export default class ContactComponent extends PureComponent {
 
                   <div className='tab_content'>
                     <div id='tab1' className='tabs_item'>
-                      <form id='contactForm' name='contactFormTwo' method='post' data-netlify='true' netlify-honeypot='bot-field'>
+                      <form
+                        id='contactForm'
+                        name='contactFormTwo'
+                        method='post'
+                        data-netlify='true'
+                        netlify-honeypot='bot-field'
+                        action='/success'
+                      >
                         <input type='hidden' name='bot-field' />
                         <input type='hidden' name='form-name' value='contactFormTwo' />
                         <div className='form'>

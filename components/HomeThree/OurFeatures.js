@@ -31,7 +31,7 @@ const OurFeatures = ({featuresData}) => {
               <span className='flaticon-target'></span>
               <h3>Our Vision</h3>
               <p>{featuresData?.ourVision}</p>
-              <Link href='/insurance-details'>
+              <Link href='/about'>
                 <a>
                   <i className='flaticon-right'></i>
                 </a>
@@ -44,7 +44,7 @@ const OurFeatures = ({featuresData}) => {
               <span className='flaticon-experience'></span>
               <h3>Core Values</h3>
               <p>{featuresData?.coreValues}</p>
-              <Link href='/insurance-details'>
+              <Link href='/about'>
                 <a>
                   <i className='flaticon-right'></i>
                 </a>

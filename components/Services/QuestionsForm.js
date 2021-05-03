@@ -5,7 +5,9 @@ const QuestionForm = () => {
     <div className='ask-question'>
       <h3>Ask Question</h3>
 
-      <form id='contactForm'>
+      <form name='servicesContactForm' method='POST' data-netlify='true' netlify-honeypot='bot-field' action='/success'>
+        <input type='hidden' name='bot-field' />
+        <input type='hidden' name='form-name' value='contactservicesContactForm' />
         <div className='row'>
           <div className='col-lg-6 col-sm-6'>
             <div className='form-group'>
@@ -21,27 +23,13 @@ const QuestionForm = () => {
 
           <div className='col-lg-6 col-sm-6'>
             <div className='form-group'>
-              <input
-                type='text'
-                name='phone_number'
-                id='phone_number'
-                required
-                className='form-control'
-                placeholder='Your Phone'
-              />
+              <input type='text' name='phone_number' id='phone_number' required className='form-control' placeholder='Your Phone' />
             </div>
           </div>
 
           <div className='col-lg-6 col-sm-6'>
             <div className='form-group'>
-              <input
-                type='text'
-                name='msg_subject'
-                id='msg_subject'
-                className='form-control'
-                required
-                placeholder='Your Subject'
-              />
+              <input type='text' name='msg_subject' id='msg_subject' className='form-control' required placeholder='Your Subject' />
             </div>
           </div>
 

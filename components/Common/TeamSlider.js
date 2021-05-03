@@ -49,7 +49,7 @@ const TeamSlider = () => {
           <OwlCarousel className='team-wrap owl-carousel owl-theme' {...options}>
             <div className='single-team'>
               <div className='image'>
-                <img width='530' height='500' src='/images/team/team1.jpg' alt='team-member-1' />
+                <img width='530' height='500' src='/images/team/team1.png' alt='team-member-1' />
               </div>
 
               <div className='content'>

@@ -50,29 +50,6 @@ const TeamSlider = () => {
             <div className='single-team'>
               <div className='image'>
                 <img width='530' height='500' src='/images/team/team1.jpg' alt='team-member-1' />
-
-                <ul className='social'>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-facebook'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-twitter'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-linkedin'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-instagram'></i>
-                    </a>
-                  </li>
-                </ul>
               </div>
 
               <div className='content'>
@@ -84,29 +61,6 @@ const TeamSlider = () => {
             <div className='single-team'>
               <div className='image'>
                 <img width='530' height='500' src='/images/team/team2.jpg' alt='team-member-2' />
-
-                <ul className='social'>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-facebook'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-twitter'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-linkedin'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-instagram'></i>
-                    </a>
-                  </li>
-                </ul>
               </div>
 
               <div className='content'>
@@ -118,29 +72,6 @@ const TeamSlider = () => {
             <div className='single-team'>
               <div className='image'>
                 <img width='530' height='500'  src='/images/team/team3.jpg' alt='team-member-3' />
-
-                <ul className='social'>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-facebook'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-twitter'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-linkedin'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-instagram'></i>
-                    </a>
-                  </li>
-                </ul>
               </div>
 
               <div className='content'>
@@ -152,29 +83,6 @@ const TeamSlider = () => {
             <div className='single-team'>
               <div className='image'>
                 <img width='530' height='500' src='/images/team/team4.jpg' alt='team-member-4' />
-
-                <ul className='social'>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-facebook'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-twitter'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-linkedin'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#' target='_blank'>
-                      <i className='bx bxl-instagram'></i>
-                    </a>
-                  </li>
-                </ul>
               </div>
 
               <div className='content'>

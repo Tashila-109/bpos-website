@@ -1,5 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
+import propTypes from 'prop-types';
 
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
@@ -31,7 +32,7 @@ const options = {
   },
 };
 
-const TeamSlider = () => {
+const TeamSlider = ({ shareholderData }) => {
   const [display, setDisplay] = React.useState(false);
 
   React.useEffect(() => {
@@ -47,49 +48,18 @@ const TeamSlider = () => {
 
         {display ? (
           <OwlCarousel className='team-wrap owl-carousel owl-theme' {...options}>
-            <div className='single-team'>
-              <div className='image'>
-                <img width='530' height='500' src='/images/team/team1.png' alt='team-member-1' />
-              </div>
+            {shareholderData.map(value => (
+              <div key={value.id} className='single-team'>
+                <div className='image'>
+                  <img width='530' height='500' src={`${process.env.API_URL}${value?.shareholderImage.url}`} alt='team-member' />
+                </div>
 
-              <div className='content'>
-                <h3>Dr Amer Al Rawas</h3>
-                <span>CEO Tasneea Oil & Gas Technology Group</span>
+                <div className='content'>
+                  <h3>{value?.shareholderMainName}</h3>
+                  <span>{value?.shareholderDesignation}</span>
+                </div>
               </div>
-            </div>
-
-            <div className='single-team'>
-              <div className='image'>
-                <img width='530' height='500' src='/images/team/team2.jpg' alt='team-member-2' />
-              </div>
-
-              <div className='content'>
-                <h3>Anselm Perera</h3>
-                <span>Director/ Chief Executive Officer</span>
-              </div>
-            </div>
-
-            <div className='single-team'>
-              <div className='image'>
-                <img width='530' height='500'  src='/images/team/team3.jpg' alt='team-member-3' />
-              </div>
-
-              <div className='content'>
-                <h3>Aitken Spence Group</h3>
-                <span>(Sri Lanka)</span>
-              </div>
-            </div>
-
-            <div className='single-team'>
-              <div className='image'>
-                <img width='530' height='500' src='/images/team/team4.jpg' alt='team-member-4' />
-              </div>
-
-              <div className='content'>
-                <h3>Frances Perera</h3>
-                <span>Director</span>
-              </div>
-            </div>
+            ))}
           </OwlCarousel>
         ) : (
           ''
@@ -97,6 +67,10 @@ const TeamSlider = () => {
       </div>
     </div>
   );
+};
+
+TeamSlider.propTypes = {
+  datashareholderData: propTypes.array.isRequired,
 };
 
 export default TeamSlider;

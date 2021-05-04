@@ -70,7 +70,7 @@ const TeamSlider = ({ shareholderData }) => {
 };
 
 TeamSlider.propTypes = {
-  datashareholderData: propTypes.array.isRequired,
+  shareholderData: propTypes.array.isRequired,
 };
 
 export default TeamSlider;

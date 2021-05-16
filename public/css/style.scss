@@ -266,8 +266,8 @@ Read More Area Style*/
 
 // Footer logo
 .footer-logo {
-	min-height: 80px;
-	max-height: 80px;
+  min-height: 80px;
+  max-height: 80px;
 }
 
 /*===== DEFAULT STYLE END ======*/
@@ -1271,7 +1271,7 @@ Our Vision Area Style
 .our-vision-area {
   position: relative;
   .vision-content {
-		min-height: 435px;
+    min-height: 435px;
     span {
       font-size: 14px;
       font-weight: 700;
@@ -1315,7 +1315,7 @@ Our Vision Area Style
   }
 }
 .our-vision-secondary {
-	background-color: #f9fbfe;
+  background-color: #f9fbfe;
 }
 
 /*
@@ -1545,10 +1545,10 @@ Achievement Area Style
     .default-btn {
       margin-top: 25px;
     }
-	}
-	.asset-content {
-		margin-right: 20px;
-	}
+  }
+  .asset-content {
+    margin-right: 20px;
+  }
   .video-img {
     position: relative;
     z-index: 1;
@@ -2562,11 +2562,17 @@ Hero Slider Area Style
         font-size: 60px;
         color: $white-color;
         margin-bottom: 30px;
+        @media (max-width: 800px) {
+          font-size: 50px;
+        }
       }
       p {
         color: $white-color;
-        font-size: 16px;
+        font-size: 24px;
         margin-bottom: 35px;
+        @media (max-width: 800px) {
+          font-size: 18px;
+        }
       }
       .slider-btn {
         .default-btn {
@@ -4707,7 +4713,7 @@ Team Area Style
   margin-bottom: 30px;
   position: relative;
   .image {
-		min-height: 350px;
+    min-height: 350px;
     max-height: 350px;
     position: relative;
     .social {
@@ -4796,7 +4802,7 @@ Team Area Style
   }
 }
 
-.serviceItem{
+.serviceItem {
   &:hover {
     cursor: pointer;
   }

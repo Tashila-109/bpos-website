@@ -12,14 +12,14 @@ const options = {
   items: 1,
   dots: true,
   autoplay: true,
-  smartSpeed: 1500,
+  smartSpeed: 2200,
   autoplayHoverPause: true,
   mouseDrag: true,
   touchDrag: true,
   navText: ["<i class='flaticon-back'></i>", "<i class='flaticon-right'></i>"],
 };
 
-const MainBannerSlider = ({bannerData}) => {
+const MainBannerSlider = ({ bannerData }) => {
   const [display, setDisplay] = React.useState(false);
 
   React.useEffect(() => {
@@ -29,7 +29,7 @@ const MainBannerSlider = ({bannerData}) => {
     <div className='hero-slider-area'>
       {display ? (
         <OwlCarousel className='hero-slider-wrap owl-carousel owl-theme' {...options}>
-          <div className='slider-item slider-item-bg-1'>
+          <div className='slider-item' style={{ backgroundImage: 'url(../images/hero-slider/hero-slider2.jpg)' }}>
             <div className='d-table'>
               <div className='d-table-cell'>
                 <div className='container'>
@@ -48,7 +48,7 @@ const MainBannerSlider = ({bannerData}) => {
             </div>
           </div>
 
-          <div className='slider-item slider-item-bg-2'>
+          <div className='slider-item' style={{ backgroundImage: 'url(../images/hero-slider/hero-slider1.jpg)' }}>
             <div className='d-table'>
               <div className='d-table-cell'>
                 <div className='container'>
@@ -67,7 +67,7 @@ const MainBannerSlider = ({bannerData}) => {
             </div>
           </div>
 
-          <div className='slider-item slider-item-bg-3'>
+          <div className='slider-item' style={{ backgroundImage: 'url(../images/hero-slider/hero-slider3.jpg)' }}>
             <div className='d-table'>
               <div className='d-table-cell'>
                 <div className='container'>

@@ -34,7 +34,7 @@ const NavbarTwo = () => {
 
   return (
     <React.Fragment>
-      <header className='header-area fixed-top'>
+      <header className='header-area header-area-two fixed-top'>
         {/* TopHeader */}
         {/* <TopHeader /> */}
 
@@ -213,12 +213,6 @@ const NavbarTwo = () => {
                   </ul>
 
                   <div className='others-option'>
-                    <div className='subscribe'>
-                      <Link href='/contact'>
-                        <a className='default-btn'>Get In Touch</a>
-                      </Link>
-                    </div>
-
                     <div className='sidebar-menu'>
                       <Link href='#'>
                         <a

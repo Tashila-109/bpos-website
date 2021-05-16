@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className='footer-top-area pt-100 pb-70'>
         <div className='container'>
           <div className='row'>
-            <div className='col-lg-4 col-md-6'>
+            <div className='col-lg-6 col-md-6'>
               <div className='single-widget'>
                 <Link href='/'>
                   <a>
@@ -56,9 +56,9 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className='col-lg-4 col-md-6'>
+            <div className='col-lg-6 col-md-6'>
               <div className='single-widget contact'>
-                <h3>Contact Us</h3>
+                <h3>Contact Us & Resources</h3>
 
                 <ul>
                   <li>
@@ -78,11 +78,32 @@ const Footer = () => {
                     <span>Address:</span>
                     Office No 83, 8th Floor, Super Plaza Building, Azaiba, Sultanate of Oman
                   </li>
+
+                  <li>
+                    <Link href='/about'>
+                      <a>Abouts Us</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/services'>
+                      <a>Products & Services</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/news-and-events'>
+                      <a>News & Events</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/contact'>
+                      <a>Contact Us</a>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
 
-            <div className='col-lg-4 col-md-6'>
+            {/* <div className='col-lg-4 col-md-6'>
               <div className='single-widget'>
                 <h3>Resources</h3>
 
@@ -109,7 +130,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

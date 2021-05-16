@@ -34,7 +34,7 @@ const NavbarTwo = () => {
 
   return (
     <React.Fragment>
-      <header className='header-area fixed-top'>
+      <header className='header-area header-area-two fixed-top'>
         {/* TopHeader */}
         {/* <TopHeader /> */}
 

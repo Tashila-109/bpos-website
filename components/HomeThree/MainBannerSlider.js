@@ -25,11 +25,15 @@ const MainBannerSlider = ({ bannerData }) => {
   React.useEffect(() => {
     setDisplay(true);
   }, []);
+
+  const bannerImageOne = bannerData?.bannerImageOne.url || '../images/hero-slider/hero-slider4.jpg';
+  const bannerImageTwo = bannerData?.bannerImageTwo.url || '../images/hero-slider/hero-slider1.jpg';
+  const bannerImageThree = bannerData?.bannerImageThree.url || '../images/hero-slider/hero-slider3.jpg';
   return (
     <div className='hero-slider-area'>
       {display ? (
         <OwlCarousel className='hero-slider-wrap owl-carousel owl-theme' {...options}>
-          <div className='slider-item' style={{ backgroundImage: 'url(../images/hero-slider/hero-slider2.jpg)' }}>
+          <div className='slider-item' style={{ backgroundImage: `url(${process.env.API_URL}${bannerImageOne})` }}>
             <div className='d-table'>
               <div className='d-table-cell'>
                 <div className='container'>
@@ -48,7 +52,7 @@ const MainBannerSlider = ({ bannerData }) => {
             </div>
           </div>
 
-          <div className='slider-item' style={{ backgroundImage: 'url(../images/hero-slider/hero-slider1.jpg)' }}>
+          <div className='slider-item' style={{ backgroundImage: `url(${process.env.API_URL}${bannerImageTwo})` }}>
             <div className='d-table'>
               <div className='d-table-cell'>
                 <div className='container'>
@@ -67,7 +71,7 @@ const MainBannerSlider = ({ bannerData }) => {
             </div>
           </div>
 
-          <div className='slider-item' style={{ backgroundImage: 'url(../images/hero-slider/hero-slider3.jpg)' }}>
+          <div className='slider-item' style={{ backgroundImage: `url(${process.env.API_URL}${bannerImageThree})` }}>
             <div className='d-table'>
               <div className='d-table-cell'>
                 <div className='container'>

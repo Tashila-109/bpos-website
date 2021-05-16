@@ -57,7 +57,7 @@ const MainBannerSlider = ({ bannerData }) => {
               <div className='d-table-cell'>
                 <div className='container'>
                   <div className='slider-text two'>
-                    <span>Global Services</span>
+                    <span>Business Process Outsourcing Services LLC</span>
                     <h1>{bannerData?.bannerHeaderTwo}</h1>
                     <p>{bannerData?.bannerDescriptionTwo}</p>
                     <div className='slider-btn'>

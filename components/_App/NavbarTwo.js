@@ -213,12 +213,6 @@ const NavbarTwo = () => {
                   </ul>
 
                   <div className='others-option'>
-                    <div className='subscribe'>
-                      <Link href='/contact'>
-                        <a className='default-btn'>Get In Touch</a>
-                      </Link>
-                    </div>
-
                     <div className='sidebar-menu'>
                       <Link href='#'>
                         <a

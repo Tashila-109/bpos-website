@@ -7,7 +7,7 @@ const OurServices = ({servicesData}) => {
     <div className='services-area-three pt-100 pb-70'>
       <div className='container'>
         <div className='section-title'>
-          <span>Our Services</span>
+          <span>{servicesData?.servicesSubHeader}</span>
           <h2>{servicesData?.servicesHeader}</h2>
           <p>{servicesData?.servicesDescription}</p>
         </div>

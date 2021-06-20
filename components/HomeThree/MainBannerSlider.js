@@ -38,7 +38,7 @@ const MainBannerSlider = ({ bannerData }) => {
               <div className='d-table-cell'>
                 <div className='container'>
                   <div className='slider-text one'>
-                    <span>BPOS Global</span>
+                    <span>{bannerData?.bannerSubHeaderOne}</span>
                     <h1>{bannerData?.bannerHeaderOne}</h1>
                     <p>{bannerData?.bannerDescriptionOne}</p>
                     <div className='slider-btn'>
@@ -57,7 +57,7 @@ const MainBannerSlider = ({ bannerData }) => {
               <div className='d-table-cell'>
                 <div className='container'>
                   <div className='slider-text two'>
-                    <span>Business Process Outsourcing Services LLC</span>
+                    <span>{bannerData?.bannerSubHeaderTwo}</span>
                     <h1>{bannerData?.bannerHeaderTwo}</h1>
                     <p>{bannerData?.bannerDescriptionTwo}</p>
                     <div className='slider-btn'>
@@ -76,7 +76,7 @@ const MainBannerSlider = ({ bannerData }) => {
               <div className='d-table-cell'>
                 <div className='container'>
                   <div className='slider-text two'>
-                    <span>Our Services</span>
+                    <span>{bannerData?.bannerSubHeaderThree}</span>
                     <h1>{bannerData?.bannerHeaderThree}</h1>
                     <p>{bannerData?.bannerDescriptionThree}</p>
                     <div className='slider-btn'>

@@ -17,7 +17,7 @@ const Services = ({data}) => {
       <PageBanner pageTitle='Products & Services' homePageUrl='/' homePageText='Home' activePageText='Products & Services' />
       <OurServices servicesData={data} />
       <ServiceDetails detailsData={data} />
-      <ContactComponent contactInformation={data?.contactInformation} />
+      <ContactComponent contactInformation={data?.contactInformation} generalData={data} />
       <Footer />
     </React.Fragment>
   );

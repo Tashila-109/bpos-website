@@ -14,7 +14,7 @@ const ServiceDetails = ({detailsData}) => {
             </div>
             <div className='col-lg-6'>
               <div className='achievement-content'>
-                <span>Services at BPOS</span>
+                <span>{detailsData?.servicesSubHeaderTwo}</span>
                 <h2>{detailsData?.servicesHeaderTwo}</h2>
                 <p>{detailsData?.servicesDescriptionTwo}</p>
               </div>

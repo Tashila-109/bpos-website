@@ -9,11 +9,11 @@ const AboutUs = ({aboutUsData}) => {
         <div className='row align-items-center'>
           <div className='col-lg-6 col-md-6'>
             <div className='about-content'>
-              <span>About Us</span>
-              <h2>About BPOS Global</h2>
+              <span>{aboutUsData?.aboutUsSubHeader}</span>
+              <h2>{aboutUsData?.aboutUsHeader}</h2>
                 <p>{aboutUsData?.aboutUsDescription}</p>
               <Link href='/about'>
-                <a className='default-btn'>Know Details</a>
+                <a className='default-btn'>More Details</a>
               </Link>
             </div>
           </div>

@@ -32,7 +32,7 @@ const options = {
   },
 };
 
-const TeamSlider = ({ shareholderData }) => {
+const TeamSlider = ({ shareholderData, generalData }) => {
   const [display, setDisplay] = React.useState(false);
 
   React.useEffect(() => {
@@ -42,8 +42,8 @@ const TeamSlider = ({ shareholderData }) => {
     <div className='team-area ptb-100'>
       <div className='container'>
         <div className='section-title'>
-          <span>Team</span>
-          <h2>Meet Our Expert Team</h2>
+          <span>{generalData?.ourTeamSubHeader}</span>
+          <h2>{generalData?.ourTeamHeader}</h2>
         </div>
 
         {display ? (
@@ -71,6 +71,7 @@ const TeamSlider = ({ shareholderData }) => {
 
 TeamSlider.propTypes = {
   shareholderData: propTypes.array.isRequired,
+  generalData: propTypes.object.isRequired,
 };
 
 export default TeamSlider;

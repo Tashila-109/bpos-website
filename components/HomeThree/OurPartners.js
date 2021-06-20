@@ -45,7 +45,7 @@ const renderOverflowBodyText = (bodyText, overflowCharacterLimit) => {
   return result;
 };
 
-const OurPartners = ({ partners }) => {
+const OurPartners = ({ partners, generalData }) => {
   const [display, setDisplay] = React.useState(false);
 
   React.useEffect(() => {
@@ -55,8 +55,8 @@ const OurPartners = ({ partners }) => {
     <div className='testimonial-area ptb-100'>
       <div className='container'>
         <div className='section-title'>
-          <span>Our Partners</span>
-          <h2>Our Strategic Partners</h2>
+          <span>{generalData?.ourPartnersHeader}</span>
+          <h2>{generalData?.ourPartnersSubHeader}</h2>
         </div>
 
         {display ? (
@@ -84,6 +84,7 @@ const OurPartners = ({ partners }) => {
 
 OurPartners.propTypes = {
   partners: propTypes.array,
+  generalData: propTypes.object.isRequired,
 };
 OurPartners.defaultProps = {
   partners: [],

@@ -7,8 +7,8 @@ const OurFeatures = ({featuresData}) => {
     <div className='choose-us-area-three pt-100 pb-70'>
       <div className='container'>
         <div className='section-title'>
-          <span>Our Values</span>
-          <h2>Our Core Values</h2>
+          <span>{featuresData?.coreValuesSectionSubHeader}</span>
+          <h2>{featuresData?.coreValuesSectionHeader}</h2>
           <p>{featuresData?.coreValuesSectionDescription}</p>
         </div>
 
@@ -16,7 +16,7 @@ const OurFeatures = ({featuresData}) => {
           <div className='col-lg-4 col-sm-6'>
             <div className='single-choose'>
               <span className='flaticon-kindness'></span>
-              <h3>Our Mission</h3>
+              <h3>{featuresData?.ourMissionTitle}</h3>
               <p>{featuresData?.ourMission}</p>
               <Link href='/about'>
                 <a>
@@ -29,7 +29,7 @@ const OurFeatures = ({featuresData}) => {
           <div className='col-lg-4 col-sm-6'>
             <div className='single-choose'>
               <span className='flaticon-target'></span>
-              <h3>Our Vision</h3>
+              <h3>{featuresData?.ourVisionTitle}</h3>
               <p>{featuresData?.ourVision}</p>
               <Link href='/about'>
                 <a>
@@ -42,7 +42,7 @@ const OurFeatures = ({featuresData}) => {
           <div className='col-lg-4 col-sm-6 offset-sm-3 offset-lg-0'>
             <div className='single-choose'>
               <span className='flaticon-experience'></span>
-              <h3>Core Values</h3>
+              <h3>{featuresData?.ourValuesTitle}</h3>
               <p>{featuresData?.coreValues}</p>
               <Link href='/about'>
                 <a>

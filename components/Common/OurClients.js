@@ -45,7 +45,7 @@ const renderOverflowBodyText = (bodyText, overflowCharacterLimit) => {
   return result;
 };
 
-const OurClients = ({ clients }) => {
+const OurClients = ({ clients, generalData }) => {
   const [display, setDisplay] = React.useState(false);
 
   React.useEffect(() => {
@@ -55,8 +55,8 @@ const OurClients = ({ clients }) => {
     <div className='testimonial-area ptb-100'>
       <div className='container'>
         <div className='section-title'>
-          <span>Our Clients</span>
-          <h2>Our Clients</h2>
+          <span>{generalData?.ourClientsHeader}</span>
+          <h2>{generalData?.ourClientsSubHeader}</h2>
         </div>
 
         {display ? (
@@ -71,7 +71,7 @@ const OurClients = ({ clients }) => {
                   </div>
                 </Link>
 
-                <p>{renderOverflowBodyText(value.description,245)}</p>
+                <p>{renderOverflowBodyText(value.description, 245)}</p>
               </div>
             ))}
           </OwlCarousel>
@@ -85,6 +85,7 @@ const OurClients = ({ clients }) => {
 
 OurClients.propTypes = {
   clients: propTypes.array,
+  generalData: propTypes.object.isRequired,
 };
 OurClients.defaultProps = {
   clients: [],

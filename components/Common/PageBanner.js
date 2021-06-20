@@ -7,7 +7,7 @@ const PageBanner = ({pageTitle, homePageUrl, homePageText, activePageText, secon
       <div className='container'>
         <div className='page-title-content'>
           <h2>{pageTitle}</h2>
-          <ul>
+          {/* <ul>
             <li>
               <Link href={homePageUrl}>
                 <a>{homePageText}</a>
@@ -21,7 +21,7 @@ const PageBanner = ({pageTitle, homePageUrl, homePageText, activePageText, secon
               </li>
             )}
             <li className='active'>{activePageText}</li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>

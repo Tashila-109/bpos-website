@@ -24,8 +24,8 @@ const ClientsComponent = ({ data }) => {
             {data.client?.clients?.map(value => (
               <div key={`${value.id}-client`} className='col-lg-4 col-md-6 col-sm-6'>
                 <Link href={value.url ? value.url : '#'}>
-                  <div className='single-team'>
-                    <div className='image'>
+                  <div className='single-team'style={{ marginBottom: '50px !important' }}>
+                    <div className='image' style={{ minHeight: '200px !important', maxHeight: '200px !important' }}>
                       <img src={`${process.env.API_URL}${value?.image.url}`} alt={`client-${value.id}-image`} />
                     </div>
                   </div>

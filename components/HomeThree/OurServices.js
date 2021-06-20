@@ -2,14 +2,14 @@ import React from 'react';
 import propTypes from 'prop-types';
 import Link from 'next/link';
 
-const OurServices = ({businessVerticals}) => {
+const OurServices = ({businessVerticals, servicesData}) => {
   return (
     <div className='services-area-three pt-100 pb-70'>
       <div className='container'>
         <div className='section-title'>
-          <span>Our Services</span>
-          <h2>Our Business Verticals</h2>
-          <p>We cover a variety of Business areas, and focus on services related to non-core activities of our clients.</p>
+          <span>{servicesData?.ourServicesSubHeader}</span>
+          <h2>{servicesData?.ourServicesHeader}</h2>
+          <p>{servicesData?.ourServicesDescription}</p>
         </div>
 
         <div className='row'>
@@ -58,6 +58,7 @@ const OurServices = ({businessVerticals}) => {
 
 OurServices.propTypes = {
   businessVerticals: propTypes.array.isRequired,
+  servicesData: propTypes.object.isRequired,
 };
 
 export default OurServices;

@@ -5,6 +5,7 @@ import Link from 'next/link';
 export default class ContactComponent extends PureComponent {
   static propTypes = {
     contactInformation: propTypes.object.isRequired,
+    generalData: propTypes.object.isRequired,
   };
   // Tab
   openTabSection = (evt, tabNmae) => {
@@ -25,7 +26,7 @@ export default class ContactComponent extends PureComponent {
     evt.currentTarget.className += 'current';
   };
   render() {
-    const { contactInformation } = this.props;
+    const { contactInformation, generalData } = this.props;
     return (
       <div className='get-quat-area get-quat-area-three ptb-100'>
         <div className='container'>
@@ -33,8 +34,8 @@ export default class ContactComponent extends PureComponent {
             <div className='col-lg-6 col-md-6'>
               <div className='get-quat-content'>
                 <div className='section-title'>
-                  <h2>Get In Touch With Us</h2>
-                  <p>Our team is happy to answer your questions. Fill out the form and we'll be in touch with you as soon as possible.</p>
+                  <h2>{generalData?.contactHeader}</h2>
+                  <p>{generalData?.contactDescription}</p>
                 </div>
                 <ul>
                   <li>

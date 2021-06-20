@@ -23,12 +23,12 @@ const Index = ({data}) => {
       <MainBannerSlider bannerData={data} />
       <OurFeatures featuresData={data} />
       <AboutUs aboutUsData={data}/>
-      <OurServices businessVerticals={data?.services} />
-      <FunFacts companyData={data.companyFacts} />
-      <OurPartners partners={data.partners?.partners} />
-      <OurClients clients={data.clients?.clients} />
-      <ContactComponent contactInformation={data?.contact} />
-      <TeamSlider shareholderData={data?.shareholders} />
+      <OurServices businessVerticals={data?.services} servicesData={data} />
+      {/* <FunFacts companyData={data.companyFacts} /> */}
+      <OurPartners partners={data.partners?.partners} generalData={data} />
+      <OurClients clients={data.clients?.clients} generalData={data} />
+      <ContactComponent contactInformation={data?.contact} generalData={data} />
+      <TeamSlider shareholderData={data?.shareholders} generalData={data} />
       <div className='pb-100'>
         <OffersArea />
       </div>
